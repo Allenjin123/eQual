@@ -293,6 +293,22 @@ LLVM_SYSPATH="$LLVM_SYSPATH" pip install -e . --no-build-isolation
 > add `-DMLIR_DIR=$LLVM_SYSPATH/lib/cmake/mlir -DLLD_DIR=$LLVM_SYSPATH/lib/cmake/lld`
 > or run cmake manually (see `build_for_e2e.sh`).
 
+## Compiling the Paper
+
+```bash
+cd experiments/phase_ordering/paper
+tectonic paper_v2.tex    # Produces paper_v2.pdf
+```
+
+Requires [tectonic](https://tectonic-typesetting.github.io/) (auto-downloads LaTeX packages).
+Figures are in `../figures/` (dependency_dag.pdf, pcycles_scatter.pdf, system_overview.pdf).
+
+To regenerate figures from experiment data:
+```bash
+cd experiments/phase_ordering
+python run_paper_experiments.py --extended 50 --parallel 50  # regenerates figures
+```
+
 ## Troubleshooting
 
 **`unordered_map::at` during compilation:** Use `HexagonOptions()` defaults, not
