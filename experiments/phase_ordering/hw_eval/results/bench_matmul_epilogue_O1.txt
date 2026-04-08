@@ -1,0 +1,12 @@
+hexagon-sim INFO: The rev_id used in the simulation is 0x00008c73 (v73na_1)
+RESULT: bench=matmul_epi variant=separate cycles=12831030 n=128
+RESULT: bench=matmul_epi variant=fused cycles=12781107 n=128
+
+Done!
+	T0: Insns=332480771 Packets=111171777
+	T1: Insns=0 Packets=0
+	T2: Insns=0 Packets=0
+	T3: Insns=0 Packets=0
+	T4: Insns=0 Packets=0
+	T5: Insns=0 Packets=0
+	Total: Insns=332480771 Pcycles=333515334

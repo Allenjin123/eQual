@@ -1,0 +1,4 @@
+hexagon-sim INFO: The rev_id used in the simulation is 0x00008c73 (v73na_1)
+RESULT: bench=loop_order variant=ijk cycles=60361785 n=256
+RESULT: bench=loop_order variant=ikj cycles=75918441 n=256
+RESULT: bench=loop_order variant=blocked cycles=65431938 n=256

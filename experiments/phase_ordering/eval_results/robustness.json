@@ -1,0 +1,223 @@
+{
+  "topology": {
+    "chain": {
+      "comm_ratio": 0.0,
+      "n_comm_pairs": 0,
+      "sat_time": 0.0046,
+      "total_time": 0.0198,
+      "cost_reduction": 0.0
+    },
+    "tree": {
+      "comm_ratio": 0.683,
+      "n_comm_pairs": 82,
+      "sat_time": 0.2486,
+      "total_time": 0.2705,
+      "cost_reduction": 52.4
+    },
+    "diamond": {
+      "comm_ratio": 0.758,
+      "n_comm_pairs": 91,
+      "sat_time": 4.7235,
+      "total_time": 4.7356,
+      "cost_reduction": 63.4
+    },
+    "wide-flat": {
+      "comm_ratio": 0.925,
+      "n_comm_pairs": 111,
+      "sat_time": 3.1153,
+      "total_time": 3.1259,
+      "cost_reduction": 76.8
+    },
+    "random": {
+      "comm_ratio": 0.817,
+      "n_comm_pairs": 98,
+      "sat_time": 0.5075,
+      "total_time": 0.6112,
+      "cost_reduction": 61.8
+    }
+  },
+  "sensitivity": [
+    {
+      "fusion_weight": 0.5,
+      "vtcm_weight": 2.75,
+      "default_cost": 41.0,
+      "ilp_cost": 18.25,
+      "reduction_pct": 55.5,
+      "ilp_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "VTCMTiling",
+        "HexagonFusion",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "ConvTiling",
+        "HexagonSlicing",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "MatmulToHexKL",
+        "SmallExpToMul",
+        "Vectorization",
+        "AddFastMath"
+      ]
+    },
+    {
+      "fusion_weight": 1.0,
+      "vtcm_weight": 2.5,
+      "default_cost": 42.0,
+      "ilp_cost": 19.5,
+      "reduction_pct": 53.6,
+      "ilp_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "VTCMTiling",
+        "HexagonFusion",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "ConvTiling",
+        "HexagonSlicing",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "MatmulToHexKL",
+        "SmallExpToMul",
+        "Vectorization",
+        "AddFastMath"
+      ]
+    },
+    {
+      "fusion_weight": 1.5,
+      "vtcm_weight": 2.25,
+      "default_cost": 43.0,
+      "ilp_cost": 20.75,
+      "reduction_pct": 51.7,
+      "ilp_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "VTCMTiling",
+        "HexagonFusion",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "ConvTiling",
+        "HexagonSlicing",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "MatmulToHexKL",
+        "SmallExpToMul",
+        "Vectorization",
+        "AddFastMath"
+      ]
+    },
+    {
+      "fusion_weight": 2.0,
+      "vtcm_weight": 2.0,
+      "default_cost": 44.0,
+      "ilp_cost": 22.0,
+      "reduction_pct": 50.0,
+      "ilp_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "ConvTiling",
+        "HexagonSlicing",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "MatmulToHexKL",
+        "SmallExpToMul",
+        "Vectorization",
+        "AddFastMath"
+      ]
+    },
+    {
+      "fusion_weight": 3.0,
+      "vtcm_weight": 1.5,
+      "default_cost": 46.0,
+      "ilp_cost": 23.0,
+      "reduction_pct": 50.0,
+      "ilp_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "ConvTiling",
+        "HexagonSlicing",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "MatmulToHexKL",
+        "SmallExpToMul",
+        "Vectorization",
+        "AddFastMath"
+      ]
+    },
+    {
+      "fusion_weight": 5.0,
+      "vtcm_weight": 0.5,
+      "default_cost": 50.0,
+      "ilp_cost": 24.5,
+      "reduction_pct": 51.0,
+      "ilp_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "HexagonFusion",
+        "HexagonTiling",
+        "VTCMTiling",
+        "HoistScalarOps",
+        "LICM",
+        "ConvTiling",
+        "HexagonSlicing",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "MatmulToHexKL",
+        "SmallExpToMul",
+        "Vectorization",
+        "AddFastMath"
+      ]
+    }
+  ],
+  "error_analysis": [
+    {
+      "extra_edges_pct": 0.0,
+      "remaining_comm_pairs": 73,
+      "reduction_pct": 50.0
+    },
+    {
+      "extra_edges_pct": 0.05,
+      "remaining_comm_pairs": 64,
+      "reduction_pct": 45.9
+    },
+    {
+      "extra_edges_pct": 0.1,
+      "remaining_comm_pairs": 53,
+      "reduction_pct": 47.3
+    },
+    {
+      "extra_edges_pct": 0.2,
+      "remaining_comm_pairs": 36,
+      "reduction_pct": 20.3
+    },
+    {
+      "extra_edges_pct": 0.3,
+      "remaining_comm_pairs": 16,
+      "reduction_pct": 12.2
+    },
+    {
+      "extra_edges_pct": 0.5,
+      "remaining_comm_pairs": 7,
+      "reduction_pct": 8.1
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "total_passes": 18,
+  "total_edges": 60,
+  "full_valid_orderings": 7030800,
+  "optimization_valid_orderings": 109200,
+  "reorderable_pairs": [
+    [
+      "MatmulToHexKL",
+      "ConvTiling"
+    ],
+    [
+      "MatmulToHexKL",
+      "ConvertLayout"
+    ],
+    [
+      "MatmulToHexKL",
+      "ScheduleMatmulForHVX"
+    ],
+    [
+      "MatmulToHexKL",
+      "LinalgGeneralize"
+    ],
+    [
+      "MatmulToHexKL",
+      "HexagonRVO"
+    ],
+    [
+      "MatmulToHexKL",
+      "DecomposeTensorConcat"
+    ],
+    [
+      "MatmulToHexKL",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "ConvTiling",
+      "ConvertLayout"
+    ],
+    [
+      "ConvTiling",
+      "ScheduleMatmulForHVX"
+    ],
+    [
+      "ConvTiling",
+      "LinalgGeneralize"
+    ],
+    [
+      "ConvTiling",
+      "HexagonRVO"
+    ],
+    [
+      "ConvTiling",
+      "DecomposeTensorConcat"
+    ],
+    [
+      "ConvTiling",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "ConvertLayout",
+      "ScheduleMatmulForHVX"
+    ],
+    [
+      "ConvertLayout",
+      "DecomposeTensorConcat"
+    ],
+    [
+      "ConvertLayout",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "ScheduleMatmulForHVX",
+      "DecomposeTensorConcat"
+    ],
+    [
+      "ScheduleMatmulForHVX",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "LinalgGeneralize",
+      "DecomposeTensorConcat"
+    ],
+    [
+      "LinalgGeneralize",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "HexagonRVO",
+      "DecomposeTensorConcat"
+    ],
+    [
+      "HexagonRVO",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "HexagonFusion",
+      "HexagonSlicing"
+    ],
+    [
+      "HexagonFusion",
+      "DecomposeTensorConcat"
+    ],
+    [
+      "HexagonFusion",
+      "VTCMTiling"
+    ],
+    [
+      "HexagonFusion",
+      "FormVirtualThreads"
+    ],
+    [
+      "HexagonFusion",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "HexagonSlicing",
+      "DecomposeTensorConcat"
+    ],
+    [
+      "HexagonSlicing",
+      "VTCMTiling"
+    ],
+    [
+      "HexagonSlicing",
+      "FormVirtualThreads"
+    ],
+    [
+      "HexagonSlicing",
+      "HexagonTiling"
+    ],
+    [
+      "HexagonSlicing",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "HexagonSlicing",
+      "HoistScalarOps"
+    ],
+    [
+      "HexagonSlicing",
+      "LICM"
+    ],
+    [
+      "DecomposeTensorConcat",
+      "VTCMTiling"
+    ],
+    [
+      "DecomposeTensorConcat",
+      "FormVirtualThreads"
+    ],
+    [
+      "DecomposeTensorConcat",
+      "HexagonTiling"
+    ],
+    [
+      "DecomposeTensorConcat",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "DecomposeTensorConcat",
+      "HoistScalarOps"
+    ],
+    [
+      "DecomposeTensorConcat",
+      "LICM"
+    ],
+    [
+      "DecomposeTensorConcat",
+      "HexagonVectorization"
+    ],
+    [
+      "DecomposeTensorConcat",
+      "HexagonVectorLowering"
+    ],
+    [
+      "DecomposeTensorConcat",
+      "AddFastMath"
+    ],
+    [
+      "VTCMTiling",
+      "FormVirtualThreads"
+    ],
+    [
+      "VTCMTiling",
+      "HexagonTiling"
+    ],
+    [
+      "VTCMTiling",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "VTCMTiling",
+      "HoistScalarOps"
+    ],
+    [
+      "VTCMTiling",
+      "LICM"
+    ],
+    [
+      "FormVirtualThreads",
+      "HexagonTiling"
+    ],
+    [
+      "FormVirtualThreads",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "FormVirtualThreads",
+      "HoistScalarOps"
+    ],
+    [
+      "FormVirtualThreads",
+      "LICM"
+    ],
+    [
+      "HexagonTiling",
+      "SmallExponentToMultiply"
+    ],
+    [
+      "SmallExponentToMultiply",
+      "HoistScalarOps"
+    ],
+    [
+      "SmallExponentToMultiply",
+      "LICM"
+    ],
+    [
+      "SmallExponentToMultiply",
+      "HexagonVectorization"
+    ],
+    [
+      "SmallExponentToMultiply",
+      "HexagonVectorLowering"
+    ],
+    [
+      "HexagonVectorLowering",
+      "AddFastMath"
+    ]
+  ],
+  "total_pairs": 153,
+  "configurations": [
+    {
+      "name": "Default\n(all opts on)",
+      "valid_orderings": 7030800,
+      "num_passes": 18
+    },
+    {
+      "name": "Required\nonly",
+      "valid_orderings": 180,
+      "num_passes": 10
+    },
+    {
+      "name": "Phase 2\nonly",
+      "valid_orderings": 60,
+      "num_passes": 6
+    },
+    {
+      "name": "Phase 3\nonly",
+      "valid_orderings": 15120,
+      "num_passes": 9
+    },
+    {
+      "name": "Optimizations\nonly",
+      "valid_orderings": 109200,
+      "num_passes": 14
+    }
+  ],
+  "passes": [
+    {
+      "name": "MatmulToHexKL",
+      "category": "optimization",
+      "phase": 2,
+      "optional": true,
+      "requires": []
+    },
+    {
+      "name": "ConvTiling",
+      "category": "optimization",
+      "phase": 2,
+      "optional": true,
+      "requires": []
+    },
+    {
+      "name": "ConvertLayout",
+      "category": "optimization",
+      "phase": 2,
+      "optional": false,
+      "requires": []
+    },
+    {
+      "name": "ScheduleMatmulForHVX",
+      "category": "optimization",
+      "phase": 2,
+      "optional": false,
+      "requires": []
+    },
+    {
+      "name": "LinalgGeneralize",
+      "category": "lowering",
+      "phase": 2,
+      "optional": false,
+      "requires": [
+        "ScheduleMatmulForHVX",
+        "ConvertLayout"
+      ]
+    },
+    {
+      "name": "HexagonRVO",
+      "category": "optimization",
+      "phase": 2,
+      "optional": true,
+      "requires": [
+        "LinalgGeneralize"
+      ]
+    },
+    {
+      "name": "HexagonFusion",
+      "category": "optimization",
+      "phase": 3,
+      "optional": true,
+      "requires": [
+        "LinalgGeneralize"
+      ]
+    },
+    {
+      "name": "HexagonSlicing",
+      "category": "optimization",
+      "phase": 3,
+      "optional": true,
+      "requires": [
+        "LinalgGeneralize"
+      ]
+    },
+    {
+      "name": "DecomposeTensorConcat",
+      "category": "lowering",
+      "phase": 3,
+      "optional": false,
+      "requires": []
+    },
+    {
+      "name": "VTCMTiling",
+      "category": "optimization",
+      "phase": 3,
+      "optional": true,
+      "requires": [
+        "LinalgGeneralize"
+      ]
+    },
+    {
+      "name": "FormVirtualThreads",
+      "category": "optimization",
+      "phase": 3,
+      "optional": true,
+      "requires": [
+        "LinalgGeneralize"
+      ]
+    },
+    {
+      "name": "HexagonTiling",
+      "category": "optimization",
+      "phase": 3,
+      "optional": false,
+      "requires": [
+        "HexagonFusion",
+        "LinalgGeneralize"
+      ]
+    },
+    {
+      "name": "SmallExponentToMultiply",
+      "category": "optimization",
+      "phase": 3,
+      "optional": false,
+      "requires": []
+    },
+    {
+      "name": "HoistScalarOps",
+      "category": "optimization",
+      "phase": 3,
+      "optional": false,
+      "requires": [
+        "HexagonTiling"
+      ]
+    },
+    {
+      "name": "LICM",
+      "category": "optimization",
+      "phase": 3,
+      "optional": false,
+      "requires": [
+        "HoistScalarOps"
+      ]
+    },
+    {
+      "name": "HexagonVectorization",
+      "category": "lowering",
+      "phase": 4,
+      "optional": false,
+      "requires": [
+        "HexagonTiling",
+        "LICM",
+        "HoistScalarOps"
+      ]
+    },
+    {
+      "name": "HexagonVectorLowering",
+      "category": "lowering",
+      "phase": 4,
+      "optional": false,
+      "requires": [
+        "HexagonVectorization"
+      ]
+    },
+    {
+      "name": "AddFastMath",
+      "category": "optimization",
+      "phase": 4,
+      "optional": true,
+      "requires": [
+        "HexagonVectorization"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,537 @@
+{
+  "passes": 16,
+  "direct_edges": 15,
+  "commutative_pairs": 73,
+  "total_pairs": 120,
+  "commutativity_pct": 60.8,
+  "egglog_rules": 73,
+  "egglog_saturation_time_s": 0.2663,
+  "egglog_extraction": {
+    "VTCM-first": {
+      "default": 38.0,
+      "optimal": 38.0,
+      "improvement_pct": 0.0,
+      "optimal_ordering": [
+        "MatmulToHexKL",
+        "ConvTiling",
+        "ConvertLayout",
+        "ScheduleMatmulHVX",
+        "LinalgGeneralize",
+        "HexagonRVO",
+        "HexagonFusion",
+        "HexagonSlicing",
+        "VTCMTiling",
+        "FormVirtualThreads",
+        "HexagonTiling",
+        "SmallExpToMul",
+        "HoistScalarOps",
+        "LICM",
+        "Vectorization",
+        "AddFastMath"
+      ],
+      "time_s": 0.1755
+    },
+    "Fusion-first": {
+      "default": 22.0,
+      "optimal": 22.0,
+      "improvement_pct": 0.0,
+      "optimal_ordering": [
+        "MatmulToHexKL",
+        "ConvTiling",
+        "ConvertLayout",
+        "ScheduleMatmulHVX",
+        "LinalgGeneralize",
+        "HexagonRVO",
+        "HexagonFusion",
+        "HexagonSlicing",
+        "VTCMTiling",
+        "FormVirtualThreads",
+        "HexagonTiling",
+        "SmallExpToMul",
+        "HoistScalarOps",
+        "LICM",
+        "Vectorization",
+        "AddFastMath"
+      ],
+      "time_s": 0.1161
+    },
+    "Balanced": {
+      "default": 37.0,
+      "optimal": 37.0,
+      "improvement_pct": 0.0,
+      "optimal_ordering": [
+        "MatmulToHexKL",
+        "ConvTiling",
+        "ConvertLayout",
+        "ScheduleMatmulHVX",
+        "LinalgGeneralize",
+        "HexagonRVO",
+        "HexagonFusion",
+        "HexagonSlicing",
+        "VTCMTiling",
+        "FormVirtualThreads",
+        "HexagonTiling",
+        "SmallExpToMul",
+        "HoistScalarOps",
+        "LICM",
+        "Vectorization",
+        "AddFastMath"
+      ],
+      "time_s": 0.1062
+    }
+  },
+  "ilp_extraction": {
+    "VTCM-first": {
+      "default": 38.0,
+      "optimal": 17.5,
+      "improvement_pct": 53.9,
+      "optimal_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "VTCMTiling",
+        "HexagonFusion",
+        "HexagonTiling",
+        "HexagonSlicing",
+        "HoistScalarOps",
+        "ConvTiling",
+        "SmallExpToMul",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "LICM",
+        "Vectorization",
+        "AddFastMath",
+        "MatmulToHexKL"
+      ],
+      "ilp_objective": 17.5,
+      "time_s": 0.3929,
+      "method": "ILP"
+    },
+    "Fusion-first": {
+      "default": 22.0,
+      "optimal": 11.0,
+      "improvement_pct": 50.0,
+      "optimal_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonSlicing",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "ConvTiling",
+        "SmallExpToMul",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "LICM",
+        "Vectorization",
+        "AddFastMath",
+        "MatmulToHexKL"
+      ],
+      "ilp_objective": 11.0,
+      "time_s": 0.0695,
+      "method": "ILP"
+    },
+    "Balanced": {
+      "default": 37.0,
+      "optimal": 18.5,
+      "improvement_pct": 50.0,
+      "optimal_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "Vectorization",
+        "AddFastMath",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "ConvTiling",
+        "SmallExpToMul",
+        "HexagonSlicing",
+        "MatmulToHexKL"
+      ],
+      "ilp_objective": 18.5,
+      "time_s": 0.042,
+      "method": "ILP"
+    }
+  },
+  "cost_models": {
+    "VTCM-first": {
+      "default": 38.0,
+      "optimal": 17.5,
+      "improvement_pct": 53.9,
+      "optimal_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "VTCMTiling",
+        "HexagonFusion",
+        "HexagonTiling",
+        "HexagonSlicing",
+        "HoistScalarOps",
+        "ConvTiling",
+        "SmallExpToMul",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "LICM",
+        "Vectorization",
+        "AddFastMath",
+        "MatmulToHexKL"
+      ],
+      "ilp_objective": 17.5,
+      "time_s": 0.3929,
+      "method": "ILP"
+    },
+    "Fusion-first": {
+      "default": 22.0,
+      "optimal": 11.0,
+      "improvement_pct": 50.0,
+      "optimal_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonSlicing",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "ConvTiling",
+        "SmallExpToMul",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "LICM",
+        "Vectorization",
+        "AddFastMath",
+        "MatmulToHexKL"
+      ],
+      "ilp_objective": 11.0,
+      "time_s": 0.0695,
+      "method": "ILP"
+    },
+    "Balanced": {
+      "default": 37.0,
+      "optimal": 18.5,
+      "improvement_pct": 50.0,
+      "optimal_ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "Vectorization",
+        "AddFastMath",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "ConvTiling",
+        "SmallExpToMul",
+        "HexagonSlicing",
+        "MatmulToHexKL"
+      ],
+      "ilp_objective": 18.5,
+      "time_s": 0.042,
+      "method": "ILP"
+    }
+  },
+  "commutative_pair_list": [
+    [
+      "MatmulToHexKL",
+      "ConvTiling"
+    ],
+    [
+      "MatmulToHexKL",
+      "ConvertLayout"
+    ],
+    [
+      "MatmulToHexKL",
+      "ScheduleMatmulHVX"
+    ],
+    [
+      "MatmulToHexKL",
+      "LinalgGeneralize"
+    ],
+    [
+      "MatmulToHexKL",
+      "HexagonRVO"
+    ],
+    [
+      "MatmulToHexKL",
+      "HexagonFusion"
+    ],
+    [
+      "MatmulToHexKL",
+      "HexagonSlicing"
+    ],
+    [
+      "MatmulToHexKL",
+      "VTCMTiling"
+    ],
+    [
+      "MatmulToHexKL",
+      "FormVirtualThreads"
+    ],
+    [
+      "MatmulToHexKL",
+      "HexagonTiling"
+    ],
+    [
+      "MatmulToHexKL",
+      "SmallExpToMul"
+    ],
+    [
+      "MatmulToHexKL",
+      "HoistScalarOps"
+    ],
+    [
+      "MatmulToHexKL",
+      "LICM"
+    ],
+    [
+      "MatmulToHexKL",
+      "Vectorization"
+    ],
+    [
+      "MatmulToHexKL",
+      "AddFastMath"
+    ],
+    [
+      "ConvTiling",
+      "ConvertLayout"
+    ],
+    [
+      "ConvTiling",
+      "ScheduleMatmulHVX"
+    ],
+    [
+      "ConvTiling",
+      "LinalgGeneralize"
+    ],
+    [
+      "ConvTiling",
+      "HexagonRVO"
+    ],
+    [
+      "ConvTiling",
+      "HexagonFusion"
+    ],
+    [
+      "ConvTiling",
+      "HexagonSlicing"
+    ],
+    [
+      "ConvTiling",
+      "VTCMTiling"
+    ],
+    [
+      "ConvTiling",
+      "FormVirtualThreads"
+    ],
+    [
+      "ConvTiling",
+      "HexagonTiling"
+    ],
+    [
+      "ConvTiling",
+      "SmallExpToMul"
+    ],
+    [
+      "ConvTiling",
+      "HoistScalarOps"
+    ],
+    [
+      "ConvTiling",
+      "LICM"
+    ],
+    [
+      "ConvTiling",
+      "Vectorization"
+    ],
+    [
+      "ConvTiling",
+      "AddFastMath"
+    ],
+    [
+      "ConvertLayout",
+      "ScheduleMatmulHVX"
+    ],
+    [
+      "ConvertLayout",
+      "SmallExpToMul"
+    ],
+    [
+      "ScheduleMatmulHVX",
+      "SmallExpToMul"
+    ],
+    [
+      "LinalgGeneralize",
+      "SmallExpToMul"
+    ],
+    [
+      "HexagonRVO",
+      "HexagonFusion"
+    ],
+    [
+      "HexagonRVO",
+      "HexagonSlicing"
+    ],
+    [
+      "HexagonRVO",
+      "VTCMTiling"
+    ],
+    [
+      "HexagonRVO",
+      "FormVirtualThreads"
+    ],
+    [
+      "HexagonRVO",
+      "HexagonTiling"
+    ],
+    [
+      "HexagonRVO",
+      "SmallExpToMul"
+    ],
+    [
+      "HexagonRVO",
+      "HoistScalarOps"
+    ],
+    [
+      "HexagonRVO",
+      "LICM"
+    ],
+    [
+      "HexagonRVO",
+      "Vectorization"
+    ],
+    [
+      "HexagonRVO",
+      "AddFastMath"
+    ],
+    [
+      "HexagonFusion",
+      "HexagonSlicing"
+    ],
+    [
+      "HexagonFusion",
+      "VTCMTiling"
+    ],
+    [
+      "HexagonFusion",
+      "FormVirtualThreads"
+    ],
+    [
+      "HexagonFusion",
+      "SmallExpToMul"
+    ],
+    [
+      "HexagonSlicing",
+      "VTCMTiling"
+    ],
+    [
+      "HexagonSlicing",
+      "FormVirtualThreads"
+    ],
+    [
+      "HexagonSlicing",
+      "HexagonTiling"
+    ],
+    [
+      "HexagonSlicing",
+      "SmallExpToMul"
+    ],
+    [
+      "HexagonSlicing",
+      "HoistScalarOps"
+    ],
+    [
+      "HexagonSlicing",
+      "LICM"
+    ],
+    [
+      "HexagonSlicing",
+      "Vectorization"
+    ],
+    [
+      "HexagonSlicing",
+      "AddFastMath"
+    ],
+    [
+      "VTCMTiling",
+      "FormVirtualThreads"
+    ],
+    [
+      "VTCMTiling",
+      "HexagonTiling"
+    ],
+    [
+      "VTCMTiling",
+      "SmallExpToMul"
+    ],
+    [
+      "VTCMTiling",
+      "HoistScalarOps"
+    ],
+    [
+      "VTCMTiling",
+      "LICM"
+    ],
+    [
+      "VTCMTiling",
+      "Vectorization"
+    ],
+    [
+      "VTCMTiling",
+      "AddFastMath"
+    ],
+    [
+      "FormVirtualThreads",
+      "HexagonTiling"
+    ],
+    [
+      "FormVirtualThreads",
+      "SmallExpToMul"
+    ],
+    [
+      "FormVirtualThreads",
+      "HoistScalarOps"
+    ],
+    [
+      "FormVirtualThreads",
+      "LICM"
+    ],
+    [
+      "FormVirtualThreads",
+      "Vectorization"
+    ],
+    [
+      "FormVirtualThreads",
+      "AddFastMath"
+    ],
+    [
+      "HexagonTiling",
+      "SmallExpToMul"
+    ],
+    [
+      "SmallExpToMul",
+      "HoistScalarOps"
+    ],
+    [
+      "SmallExpToMul",
+      "LICM"
+    ],
+    [
+      "SmallExpToMul",
+      "Vectorization"
+    ],
+    [
+      "SmallExpToMul",
+      "AddFastMath"
+    ]
+  ]
+}

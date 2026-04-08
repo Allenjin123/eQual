@@ -1,0 +1,14 @@
+hexagon-sim INFO: The rev_id used in the simulation is 0x00008c73 (v73na_1)
+RESULT: bench=interaction variant=none cycles=1037250 n=262144
+RESULT: bench=interaction variant=fusion_only cycles=987705 n=262144
+RESULT: bench=interaction variant=tiling_only cycles=960792 n=262144
+RESULT: bench=interaction variant=fusion_and_tiling cycles=960702 n=262144
+
+Done!
+	T0: Insns=47374688 Packets=18113824
+	T1: Insns=0 Packets=0
+	T2: Insns=0 Packets=0
+	T3: Insns=0 Packets=0
+	T4: Insns=0 Packets=0
+	T5: Insns=0 Packets=0
+	Total: Insns=47374688 Pcycles=54341478

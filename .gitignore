@@ -1,0 +1,66 @@
+# === Large build dependencies (not part of eQual) ===
+hexagon-mlir/
+Hexagon_SDK/
+Hexagon_SDK_Linux.zip
+LLVM_DIR/
+HEXKL_DIR/
+mlir-env/
+
+# === Auto-generated review artifacts ===
+AUTO_REVIEW.md
+REVIEW_STATE.json
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# === Binary / build artifacts ===
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.la
+*.lai
+*.lo
+*.slo
+*.exe
+*.out
+*.app
+*.d
+*.gch
+*.pch
+*.ilk
+*.pdb
+*.dwo
+*.mod
+*.smod
+
+# === Hexagon simulator artifacts ===
+experiments/phase_ordering/hw_eval/**/q6ss.cfg
+experiments/phase_ordering/hw_eval/**/osm.cfg
+experiments/phase_ordering/hw_eval/**/pmu_statsfile.txt
+experiments/phase_ordering/hw_eval/**/*.log
+experiments/phase_ordering/hw_eval/build/
+
+# === Editor / OS ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === Paper drafts ===
+experiments/phase_ordering/paper/
+
+# === Claude artifacts ===
+.claude/
+TASK_REPORT*.md

@@ -1,0 +1,12 @@
+hexagon-sim INFO: The rev_id used in the simulation is 0x00008c73 (v73na_1)
+RESULT: bench=scalar_hoist variant=non_hoisted cycles=3366978 n=65536
+RESULT: bench=scalar_hoist variant=hoisted cycles=209007 n=65536
+
+Done!
+	T0: Insns=29682082 Packets=15765218
+	T1: Insns=0 Packets=0
+	T2: Insns=0 Packets=0
+	T3: Insns=0 Packets=0
+	T4: Insns=0 Packets=0
+	T5: Insns=0 Packets=0
+	Total: Insns=29682082 Pcycles=47295657

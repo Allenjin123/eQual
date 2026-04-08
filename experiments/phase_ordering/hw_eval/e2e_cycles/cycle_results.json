@@ -1,0 +1,49 @@
+{
+  "add_2d_kernel": {
+    "default": {
+      "phase3_order": [
+        "HexagonFusion",
+        "HexagonSlicing",
+        "VTCMTiling",
+        "FormVirtualThreads"
+      ],
+      "cycles": "Pass"
+    },
+    "hw-calibrated": {
+      "phase3_order": [
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonSlicing",
+        "FormVirtualThreads"
+      ],
+      "cycles": "Pass"
+    },
+    "fusion-first": {
+      "phase3_order": [
+        "HexagonFusion",
+        "VTCMTiling",
+        "FormVirtualThreads",
+        "HexagonSlicing"
+      ],
+      "cycles": "Pass"
+    },
+    "vtcm-first": {
+      "phase3_order": [
+        "VTCMTiling",
+        "HexagonFusion",
+        "HexagonSlicing",
+        "FormVirtualThreads"
+      ],
+      "cycles": "Pass"
+    },
+    "worst-case": {
+      "phase3_order": [
+        "FormVirtualThreads",
+        "HexagonSlicing",
+        "VTCMTiling",
+        "HexagonFusion"
+      ],
+      "cycles": "Pass"
+    }
+  }
+}

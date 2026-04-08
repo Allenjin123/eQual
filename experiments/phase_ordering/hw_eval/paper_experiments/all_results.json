@@ -1,0 +1,160 @@
+{
+  "v75": {
+    "hexkl_attention": {
+      "default": {
+        "status": "ok",
+        "pcycles": 9787117756,
+        "insns": 4860131127,
+        "time_us": null,
+        "obj_size": 150252,
+        "ordering": [
+          "HexagonFusion",
+          "HexagonSlicing",
+          "VTCMTiling",
+          "FormVirtualThreads"
+        ],
+        "passed": true,
+        "error": null
+      },
+      "vtcm_first": {
+        "status": "ok",
+        "pcycles": 9979483087,
+        "insns": 5025267334,
+        "time_us": null,
+        "obj_size": 179988,
+        "ordering": [
+          "VTCMTiling",
+          "HexagonFusion",
+          "HexagonSlicing",
+          "FormVirtualThreads"
+        ],
+        "passed": true,
+        "error": null
+      },
+      "fusion_first": {
+        "status": "ok",
+        "pcycles": 9787035268,
+        "insns": 4860150922,
+        "time_us": null,
+        "obj_size": 150244,
+        "ordering": [
+          "HexagonFusion",
+          "VTCMTiling",
+          "FormVirtualThreads",
+          "HexagonSlicing"
+        ],
+        "passed": true,
+        "error": null
+      },
+      "slicing_first": {
+        "status": "ok",
+        "pcycles": 9787262737,
+        "insns": 4860218872,
+        "time_us": null,
+        "obj_size": 150152,
+        "ordering": [
+          "HexagonSlicing",
+          "HexagonFusion",
+          "VTCMTiling",
+          "FormVirtualThreads"
+        ],
+        "passed": true,
+        "error": null
+      },
+      "worst_case": {
+        "status": "ok",
+        "pcycles": 9979713349,
+        "insns": 5025435083,
+        "time_us": null,
+        "obj_size": 180028,
+        "ordering": [
+          "FormVirtualThreads",
+          "HexagonSlicing",
+          "VTCMTiling",
+          "HexagonFusion"
+        ],
+        "passed": true,
+        "error": null
+      }
+    }
+  },
+  "v73": {
+    "hexkl_attention": {
+      "default": {
+        "status": "ok",
+        "pcycles": 9787209886,
+        "insns": 4860234136,
+        "time_us": null,
+        "obj_size": 150124,
+        "ordering": [
+          "HexagonFusion",
+          "HexagonSlicing",
+          "VTCMTiling",
+          "FormVirtualThreads"
+        ],
+        "passed": true,
+        "error": null
+      },
+      "vtcm_first": {
+        "status": "ok",
+        "pcycles": 9979661413,
+        "insns": 5025299121,
+        "time_us": null,
+        "obj_size": 179992,
+        "ordering": [
+          "VTCMTiling",
+          "HexagonFusion",
+          "HexagonSlicing",
+          "FormVirtualThreads"
+        ],
+        "passed": true,
+        "error": null
+      },
+      "fusion_first": {
+        "status": "ok",
+        "pcycles": 9787066666,
+        "insns": 4860182308,
+        "time_us": null,
+        "obj_size": 150244,
+        "ordering": [
+          "HexagonFusion",
+          "VTCMTiling",
+          "FormVirtualThreads",
+          "HexagonSlicing"
+        ],
+        "passed": true,
+        "error": null
+      },
+      "slicing_first": {
+        "status": "ok",
+        "pcycles": 9787203274,
+        "insns": 4860178031,
+        "time_us": null,
+        "obj_size": 150244,
+        "ordering": [
+          "HexagonSlicing",
+          "HexagonFusion",
+          "VTCMTiling",
+          "FormVirtualThreads"
+        ],
+        "passed": true,
+        "error": null
+      },
+      "worst_case": {
+        "status": "ok",
+        "pcycles": 9979992724,
+        "insns": 5025435511,
+        "time_us": null,
+        "obj_size": 180036,
+        "ordering": [
+          "FormVirtualThreads",
+          "HexagonSlicing",
+          "VTCMTiling",
+          "HexagonFusion"
+        ],
+        "passed": true,
+        "error": null
+      }
+    }
+  }
+}

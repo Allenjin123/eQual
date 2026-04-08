@@ -1,0 +1,51 @@
+{
+  "mul_2d_kernel": {
+    "mlir": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/mul_2d_kernel/input.mlir",
+    "wrapper": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/mul_2d_kernel/wrapper.cpp",
+    "func_name": "add_2d_mlir",
+    "description": "Elementwise f32 multiply (63x16384)",
+    "category": "bandwidth"
+  },
+  "sub_2d_kernel": {
+    "mlir": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/sub_2d_kernel/input.mlir",
+    "wrapper": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/sub_2d_kernel/wrapper.cpp",
+    "func_name": "add_2d_mlir",
+    "description": "Elementwise f32 subtract (63x16384)",
+    "category": "bandwidth"
+  },
+  "max_2d_kernel": {
+    "mlir": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/max_2d_kernel/input.mlir",
+    "wrapper": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/max_2d_kernel/wrapper.cpp",
+    "func_name": "add_2d_mlir",
+    "description": "Elementwise f32 max (63x16384)",
+    "category": "bandwidth"
+  },
+  "add_relu_kernel": {
+    "mlir": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/add_relu_kernel/input.mlir",
+    "wrapper": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/add_relu_kernel/wrapper.cpp",
+    "func_name": "add_2d_mlir",
+    "description": "Fused add+relu f32 (63x16384, 2 linalg ops)",
+    "category": "bandwidth"
+  },
+  "add_mul_kernel": {
+    "mlir": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/add_mul_kernel/input.mlir",
+    "wrapper": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/add_mul_kernel/wrapper.cpp",
+    "func_name": "add_2d_mlir",
+    "description": "Fused add+square f32 (63x16384, 2 linalg ops)",
+    "category": "bandwidth"
+  },
+  "add_small_kernel": {
+    "mlir": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/add_small_kernel/input.mlir",
+    "wrapper": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/add_small_kernel/wrapper.cpp",
+    "func_name": "add_2d_mlir",
+    "description": "Elementwise f32 add SMALL (16x4096)",
+    "category": "bandwidth"
+  },
+  "add_large_kernel": {
+    "mlir": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/add_large_kernel/input.mlir",
+    "wrapper": "/home/allenjin/Projects/qualcomm-mlir/hexagon-mlir/test/python/mlir/add_large_kernel/wrapper.cpp",
+    "func_name": "add_2d_mlir",
+    "description": "Elementwise f32 add LARGE (128x16384)",
+    "category": "bandwidth"
+  }
+}

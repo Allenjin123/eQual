@@ -1,0 +1,13 @@
+hexagon-sim INFO: The rev_id used in the simulation is 0x00008c73 (v73na_1)
+RESULT: bench=ordering variant=default_5loops cycles=7864404 n=262144
+RESULT: bench=ordering variant=partial_3loops cycles=6291528 n=262144
+RESULT: bench=ordering variant=egraph_1loop cycles=4718652 n=262144
+
+Done!
+	T0: Insns=159567324 Packets=84663488
+	T1: Insns=0 Packets=0
+	T2: Insns=0 Packets=0
+	T3: Insns=0 Packets=0
+	T4: Insns=0 Packets=0
+	T5: Insns=0 Packets=0
+	Total: Insns=159567324 Pcycles=253990488

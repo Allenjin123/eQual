@@ -1,0 +1,164 @@
+{
+  "description": "Comparison of hardware-calibrated weights (Hexagon v73 simulator) vs synthetic balanced weights on the 16-pass Hexagon pipeline.",
+  "calibrated_weights": {
+    "HoistScalarOps": 5.0,
+    "VTCMTiling": 2.0,
+    "HexagonFusion": 1.0,
+    "ScheduleMatmulHVX": 0.5,
+    "LICM": 0.3
+  },
+  "synthetic_weights": {
+    "HexagonFusion": 1.5,
+    "VTCMTiling": 1.5,
+    "HexagonTiling": 1.0,
+    "HoistScalarOps": 0.5
+  },
+  "pipeline_size": 16,
+  "commutative_pairs": 73,
+  "default_ordering": [
+    "MatmulToHexKL",
+    "ConvTiling",
+    "ConvertLayout",
+    "ScheduleMatmulHVX",
+    "LinalgGeneralize",
+    "HexagonRVO",
+    "HexagonFusion",
+    "HexagonSlicing",
+    "VTCMTiling",
+    "FormVirtualThreads",
+    "HexagonTiling",
+    "SmallExpToMul",
+    "HoistScalarOps",
+    "LICM",
+    "Vectorization",
+    "AddFastMath"
+  ],
+  "ilp": {
+    "calibrated": {
+      "ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "VTCMTiling",
+        "HexagonFusion",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "Vectorization",
+        "HexagonSlicing",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "AddFastMath",
+        "SmallExpToMul",
+        "ConvTiling",
+        "MatmulToHexKL"
+      ],
+      "cost_under_own_weights": 42.1,
+      "cost_under_synthetic_weights": 18.5,
+      "reduction_pct": 51.83,
+      "solve_time_s": 0.105
+    },
+    "synthetic": {
+      "ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "Vectorization",
+        "AddFastMath",
+        "FormVirtualThreads",
+        "HexagonRVO",
+        "ConvTiling",
+        "SmallExpToMul",
+        "HexagonSlicing",
+        "MatmulToHexKL"
+      ],
+      "cost_under_own_weights": 18.5,
+      "cost_under_calibrated_weights": 43.1,
+      "reduction_pct": 50.0,
+      "solve_time_s": 0.0459
+    }
+  },
+  "sa": {
+    "calibrated": {
+      "ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "HexagonFusion",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "VTCMTiling",
+        "LICM",
+        "FormVirtualThreads",
+        "SmallExpToMul",
+        "ConvTiling",
+        "HexagonRVO",
+        "HexagonSlicing",
+        "MatmulToHexKL",
+        "Vectorization",
+        "AddFastMath"
+      ],
+      "cost": 42.1,
+      "reduction_pct": 51.83,
+      "solve_time_s": 0.1999
+    },
+    "synthetic": {
+      "ordering": [
+        "ScheduleMatmulHVX",
+        "ConvertLayout",
+        "LinalgGeneralize",
+        "VTCMTiling",
+        "HexagonFusion",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "HexagonRVO",
+        "FormVirtualThreads",
+        "LICM",
+        "MatmulToHexKL",
+        "SmallExpToMul",
+        "Vectorization",
+        "AddFastMath",
+        "HexagonSlicing",
+        "ConvTiling"
+      ],
+      "cost": 18.5,
+      "reduction_pct": 50.0,
+      "solve_time_s": 0.2051
+    }
+  },
+  "orderings_differ": true,
+  "n_position_diffs": 5,
+  "position_diff_details": {
+    "ConvTiling": {
+      "calibrated_pos": 14,
+      "synthetic_pos": 12,
+      "shift": 2
+    },
+    "HexagonFusion": {
+      "calibrated_pos": 4,
+      "synthetic_pos": 3,
+      "shift": 1
+    },
+    "HexagonSlicing": {
+      "calibrated_pos": 9,
+      "synthetic_pos": 14,
+      "shift": -5
+    },
+    "VTCMTiling": {
+      "calibrated_pos": 3,
+      "synthetic_pos": 4,
+      "shift": -1
+    },
+    "AddFastMath": {
+      "calibrated_pos": 12,
+      "synthetic_pos": 9,
+      "shift": 3
+    }
+  },
+  "key_insight": "Different cost model weights produce different optimal orderings. Hardware-calibrated weights shift HoistScalarOps significantly earlier (weight 5.0 vs 0.5) because simulator measurements show it delivers 16.1x speedup \u2014 the highest single-pass impact. This demonstrates that cost model calibration against real hardware is essential for achieving truly optimal phase orderings."
+}

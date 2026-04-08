@@ -1,0 +1,222 @@
+{
+  "v75": {
+    "hexkl_attention": {
+      "best_ordering": "fusion_first",
+      "best_pcycles": 9787035268,
+      "best_phase3": [
+        "HexagonFusion",
+        "VTCMTiling",
+        "FormVirtualThreads",
+        "HexagonSlicing"
+      ],
+      "worst_ordering": "worst_case",
+      "worst_pcycles": 9979713349,
+      "speedup": 1.019687073329549,
+      "speedup_pct": 1.968707332954911,
+      "num_valid": 5,
+      "hw_calibrated_weights": {
+        "HexagonFusion": 0.5079163413831844,
+        "HexagonSlicing": 1.841726983820124,
+        "VTCMTiling": 2.8147271021984364,
+        "FormVirtualThreads": 2.981076103428748
+      },
+      "cost_model_predictions": {
+        "vtcm_first": {
+          "predicted_best": "vtcm_first",
+          "predicted_cost": 5.0,
+          "actual_pcycles": 9979483087,
+          "is_actual_best": false,
+          "vs_best_pct": 1.9663546082155592
+        },
+        "fusion_first": {
+          "predicted_best": "default",
+          "predicted_cost": 5.5,
+          "actual_pcycles": 9787117756,
+          "is_actual_best": false,
+          "vs_best_pct": 0.0008428292914168336
+        },
+        "balanced": {
+          "predicted_best": "vtcm_first",
+          "predicted_cost": 5.5,
+          "actual_pcycles": 9979483087,
+          "is_actual_best": false,
+          "vs_best_pct": 1.9663546082155592
+        },
+        "hw_calibrated": {
+          "predicted_best": "worst_case",
+          "predicted_cost": 8.994930212366551,
+          "actual_pcycles": 9979713349,
+          "is_actual_best": false,
+          "vs_best_pct": 1.9687073329549178
+        }
+      },
+      "all_results_sorted": [
+        {
+          "ordering": "fusion_first",
+          "pcycles": 9787035268,
+          "insns": 4860150922,
+          "phase3": [
+            "HexagonFusion",
+            "VTCMTiling",
+            "FormVirtualThreads",
+            "HexagonSlicing"
+          ]
+        },
+        {
+          "ordering": "default",
+          "pcycles": 9787117756,
+          "insns": 4860131127,
+          "phase3": [
+            "HexagonFusion",
+            "HexagonSlicing",
+            "VTCMTiling",
+            "FormVirtualThreads"
+          ]
+        },
+        {
+          "ordering": "slicing_first",
+          "pcycles": 9787262737,
+          "insns": 4860218872,
+          "phase3": [
+            "HexagonSlicing",
+            "HexagonFusion",
+            "VTCMTiling",
+            "FormVirtualThreads"
+          ]
+        },
+        {
+          "ordering": "vtcm_first",
+          "pcycles": 9979483087,
+          "insns": 5025267334,
+          "phase3": [
+            "VTCMTiling",
+            "HexagonFusion",
+            "HexagonSlicing",
+            "FormVirtualThreads"
+          ]
+        },
+        {
+          "ordering": "worst_case",
+          "pcycles": 9979713349,
+          "insns": 5025435083,
+          "phase3": [
+            "FormVirtualThreads",
+            "HexagonSlicing",
+            "VTCMTiling",
+            "HexagonFusion"
+          ]
+        }
+      ]
+    }
+  },
+  "v73": {
+    "hexkl_attention": {
+      "best_ordering": "fusion_first",
+      "best_pcycles": 9787066666,
+      "best_phase3": [
+        "HexagonFusion",
+        "VTCMTiling",
+        "FormVirtualThreads",
+        "HexagonSlicing"
+      ],
+      "worst_ordering": "worst_case",
+      "worst_pcycles": 9979992724,
+      "speedup": 1.0197123473849647,
+      "speedup_pct": 1.9712347384964746,
+      "num_valid": 5,
+      "hw_calibrated_weights": {
+        "HexagonFusion": 0.5078398016097967,
+        "HexagonSlicing": 1.8415156571894389,
+        "VTCMTiling": 2.814246783754557,
+        "FormVirtualThreads": 2.9816622955385563
+      },
+      "cost_model_predictions": {
+        "vtcm_first": {
+          "predicted_best": "vtcm_first",
+          "predicted_cost": 5.0,
+          "actual_pcycles": 9979661413,
+          "is_actual_best": false,
+          "vs_best_pct": 1.9678495464741121
+        },
+        "fusion_first": {
+          "predicted_best": "default",
+          "predicted_cost": 5.5,
+          "actual_pcycles": 9787209886,
+          "is_actual_best": false,
+          "vs_best_pct": 0.0014633598082819067
+        },
+        "balanced": {
+          "predicted_best": "vtcm_first",
+          "predicted_cost": 5.5,
+          "actual_pcycles": 9979661413,
+          "is_actual_best": false,
+          "vs_best_pct": 1.9678495464741121
+        },
+        "hw_calibrated": {
+          "predicted_best": "worst_case",
+          "predicted_cost": 8.993528629527944,
+          "actual_pcycles": 9979992724,
+          "is_actual_best": false,
+          "vs_best_pct": 1.971234738496467
+        }
+      },
+      "all_results_sorted": [
+        {
+          "ordering": "fusion_first",
+          "pcycles": 9787066666,
+          "insns": 4860182308,
+          "phase3": [
+            "HexagonFusion",
+            "VTCMTiling",
+            "FormVirtualThreads",
+            "HexagonSlicing"
+          ]
+        },
+        {
+          "ordering": "slicing_first",
+          "pcycles": 9787203274,
+          "insns": 4860178031,
+          "phase3": [
+            "HexagonSlicing",
+            "HexagonFusion",
+            "VTCMTiling",
+            "FormVirtualThreads"
+          ]
+        },
+        {
+          "ordering": "default",
+          "pcycles": 9787209886,
+          "insns": 4860234136,
+          "phase3": [
+            "HexagonFusion",
+            "HexagonSlicing",
+            "VTCMTiling",
+            "FormVirtualThreads"
+          ]
+        },
+        {
+          "ordering": "vtcm_first",
+          "pcycles": 9979661413,
+          "insns": 5025299121,
+          "phase3": [
+            "VTCMTiling",
+            "HexagonFusion",
+            "HexagonSlicing",
+            "FormVirtualThreads"
+          ]
+        },
+        {
+          "ordering": "worst_case",
+          "pcycles": 9979992724,
+          "insns": 5025435511,
+          "phase3": [
+            "FormVirtualThreads",
+            "HexagonSlicing",
+            "VTCMTiling",
+            "HexagonFusion"
+          ]
+        }
+      ]
+    }
+  }
+}

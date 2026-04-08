@@ -1,0 +1,43 @@
+{
+  "platform": "Hexagon v73 (hexagon-sim)",
+  "benchmarks": {
+    "fusion": {
+      "baseline": 1376334,
+      "optimized": 1474641,
+      "speedup": 0.933334960848098
+    },
+    "tiling": {
+      "baseline": 1035318,
+      "optimized": 965019,
+      "speedup": 1.072847270364625
+    },
+    "loop_order": {
+      "baseline": 60361785,
+      "ikj": 75918441,
+      "blocked": 65431938,
+      "speedup_ikj": 0.7950872568629274,
+      "speedup_blocked": 0.9225125656525717
+    },
+    "scalar_hoist": {
+      "baseline": 3366978,
+      "optimized": 209007,
+      "speedup": 16.109403034348134
+    },
+    "interaction": {
+      "none": 1037250,
+      "fusion_only": 987705,
+      "tiling_only": 960792,
+      "fusion_and_tiling": 960702,
+      "fuse_reduction_pct": 4.7765726681128,
+      "tile_reduction_pct": 7.371221981200293,
+      "both_reduction_pct": 7.37989877078814,
+      "interaction_effect_pct": -4.767895878524952
+    }
+  },
+  "hw_speedups": {
+    "fusion": 0.933334960848098,
+    "tiling": 1.072847270364625,
+    "loop_order": 0.9225125656525717,
+    "scalar_hoist": 16.109403034348134
+  }
+}

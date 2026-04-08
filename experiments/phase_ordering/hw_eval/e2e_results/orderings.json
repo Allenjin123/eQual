@@ -1,0 +1,52 @@
+{
+  "default": {
+    "phase3_order": [
+      "HexagonFusion",
+      "HexagonSlicing",
+      "VTCMTiling",
+      "FormVirtualThreads"
+    ],
+    "option_string": "HexagonFusion,HexagonSlicing,VTCMTiling,FormVirtualThreads",
+    "description": "Default ordering from LinalgToLLVMPass.cpp"
+  },
+  "hw-calibrated": {
+    "phase3_order": [
+      "HexagonFusion",
+      "VTCMTiling",
+      "HexagonSlicing",
+      "FormVirtualThreads"
+    ],
+    "option_string": "HexagonFusion,VTCMTiling,HexagonSlicing,FormVirtualThreads",
+    "description": "ILP-optimal under hw-calibrated cost model (cost=62.9)"
+  },
+  "fusion-first": {
+    "phase3_order": [
+      "HexagonFusion",
+      "VTCMTiling",
+      "FormVirtualThreads",
+      "HexagonSlicing"
+    ],
+    "option_string": "HexagonFusion,VTCMTiling,FormVirtualThreads,HexagonSlicing",
+    "description": "ILP-optimal under fusion-first cost model (cost=11.0)"
+  },
+  "vtcm-first": {
+    "phase3_order": [
+      "VTCMTiling",
+      "HexagonFusion",
+      "FormVirtualThreads",
+      "HexagonSlicing"
+    ],
+    "option_string": "VTCMTiling,HexagonFusion,FormVirtualThreads,HexagonSlicing",
+    "description": "ILP-optimal under vtcm-first cost model (cost=17.5)"
+  },
+  "worst-case": {
+    "phase3_order": [
+      "FormVirtualThreads",
+      "HexagonSlicing",
+      "VTCMTiling",
+      "HexagonFusion"
+    ],
+    "option_string": "FormVirtualThreads,HexagonSlicing,VTCMTiling,HexagonFusion",
+    "description": "Reverse of hw-calibrated optimal (adversarial worst case)"
+  }
+}

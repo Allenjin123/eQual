@@ -1,0 +1,23 @@
+
+\begin{table}[t]
+\centering
+\caption{Hardware-validated pass impact: cycle counts on Hexagon v73 simulator.
+Each row compares the output of a pipeline with vs.\ without the named pass.}
+\label{tab:hw-eval}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Pass (Optimization)} & \textbf{Without} & \textbf{With} & \textbf{Speedup} \\
+\midrule
+HexagonFusion & 1,376,334 & 1,474,641 & 0.93$\times$ \\
+VTCMTiling & 1,035,318 & 965,019 & 1.07$\times$ \\
+ScheduleMatmulForHVX & 60,361,785 & 65,431,938 & 0.92$\times$ \\
+HoistScalarOps & 3,366,978 & 209,007 & 16.11$\times$ \\
+\midrule
+\multicolumn{4}{l}{\textit{Pass Interaction (Fusion $\times$ Tiling):}} \\
+No optimization & 1,037,250 & --- & 1.00$\times$ \\
+Fusion only & --- & 987,705 & $-$4.8\% \\
+Tiling only & --- & 960,792 & $-$7.4\% \\
+Both (interaction) & --- & 960,702 & $-$7.4\% \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,286 @@
+{
+  "add_2d_kernel": {
+    "default": {
+      "kernel": {
+        "basic_blocks": 4,
+        "instructions": 125,
+        "loads": 17,
+        "stores": 7,
+        "alloca": 0,
+        "getelementptr": 27,
+        "fadd": 7,
+        "fmul": 0,
+        "add": 14,
+        "mul": 0,
+        "branches": 10,
+        "calls": 10,
+        "phi_nodes": 8,
+        "vector_ops": 28,
+        "shufflevector": 0,
+        "lines": 140,
+        "bytes": 6367
+      },
+      "full_ir": {
+        "total_lines": 9973,
+        "total_bytes": 684142,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 91860
+    },
+    "hw-calibrated": {
+      "kernel": {
+        "basic_blocks": 4,
+        "instructions": 125,
+        "loads": 17,
+        "stores": 7,
+        "alloca": 0,
+        "getelementptr": 27,
+        "fadd": 7,
+        "fmul": 0,
+        "add": 14,
+        "mul": 0,
+        "branches": 10,
+        "calls": 10,
+        "phi_nodes": 8,
+        "vector_ops": 28,
+        "shufflevector": 0,
+        "lines": 140,
+        "bytes": 6367
+      },
+      "full_ir": {
+        "total_lines": 9973,
+        "total_bytes": 684145,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 91824
+    },
+    "fusion-first": {
+      "kernel": {
+        "basic_blocks": 4,
+        "instructions": 125,
+        "loads": 17,
+        "stores": 7,
+        "alloca": 0,
+        "getelementptr": 27,
+        "fadd": 7,
+        "fmul": 0,
+        "add": 14,
+        "mul": 0,
+        "branches": 10,
+        "calls": 10,
+        "phi_nodes": 8,
+        "vector_ops": 28,
+        "shufflevector": 0,
+        "lines": 140,
+        "bytes": 6367
+      },
+      "full_ir": {
+        "total_lines": 9973,
+        "total_bytes": 684142,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 91828
+    },
+    "vtcm-first": {
+      "kernel": {
+        "basic_blocks": 10,
+        "instructions": 146,
+        "loads": 17,
+        "stores": 7,
+        "alloca": 0,
+        "getelementptr": 26,
+        "fadd": 7,
+        "fmul": 0,
+        "add": 21,
+        "mul": 0,
+        "branches": 16,
+        "calls": 6,
+        "phi_nodes": 8,
+        "vector_ops": 28,
+        "shufflevector": 0,
+        "lines": 173,
+        "bytes": 7018
+      },
+      "full_ir": {
+        "total_lines": 10006,
+        "total_bytes": 684562,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 91908
+    },
+    "worst-case": {
+      "kernel": {
+        "basic_blocks": 10,
+        "instructions": 146,
+        "loads": 17,
+        "stores": 7,
+        "alloca": 0,
+        "getelementptr": 26,
+        "fadd": 7,
+        "fmul": 0,
+        "add": 21,
+        "mul": 0,
+        "branches": 16,
+        "calls": 6,
+        "phi_nodes": 8,
+        "vector_ops": 28,
+        "shufflevector": 0,
+        "lines": 173,
+        "bytes": 7018
+      },
+      "full_ir": {
+        "total_lines": 10006,
+        "total_bytes": 684539,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 91904
+    }
+  },
+  "hexkl_linalg_matmul": {
+    "default": {
+      "kernel": {
+        "basic_blocks": 7,
+        "instructions": 289,
+        "loads": 51,
+        "stores": 18,
+        "alloca": 0,
+        "getelementptr": 67,
+        "fadd": 16,
+        "fmul": 16,
+        "add": 7,
+        "mul": 0,
+        "branches": 8,
+        "calls": 16,
+        "phi_nodes": 4,
+        "vector_ops": 112,
+        "shufflevector": 16,
+        "lines": 305,
+        "bytes": 14243
+      },
+      "full_ir": {
+        "total_lines": 10136,
+        "total_bytes": 691358,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 93108
+    },
+    "hw-calibrated": {
+      "kernel": {
+        "basic_blocks": 7,
+        "instructions": 289,
+        "loads": 51,
+        "stores": 18,
+        "alloca": 0,
+        "getelementptr": 67,
+        "fadd": 16,
+        "fmul": 16,
+        "add": 7,
+        "mul": 0,
+        "branches": 8,
+        "calls": 16,
+        "phi_nodes": 4,
+        "vector_ops": 112,
+        "shufflevector": 16,
+        "lines": 305,
+        "bytes": 14243
+      },
+      "full_ir": {
+        "total_lines": 10136,
+        "total_bytes": 691092,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 93108
+    },
+    "fusion-first": {
+      "kernel": {
+        "basic_blocks": 7,
+        "instructions": 289,
+        "loads": 51,
+        "stores": 18,
+        "alloca": 0,
+        "getelementptr": 67,
+        "fadd": 16,
+        "fmul": 16,
+        "add": 7,
+        "mul": 0,
+        "branches": 8,
+        "calls": 16,
+        "phi_nodes": 4,
+        "vector_ops": 112,
+        "shufflevector": 16,
+        "lines": 305,
+        "bytes": 14243
+      },
+      "full_ir": {
+        "total_lines": 10136,
+        "total_bytes": 691358,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 93108
+    },
+    "vtcm-first": {
+      "kernel": {
+        "basic_blocks": 7,
+        "instructions": 289,
+        "loads": 51,
+        "stores": 18,
+        "alloca": 0,
+        "getelementptr": 67,
+        "fadd": 16,
+        "fmul": 16,
+        "add": 7,
+        "mul": 0,
+        "branches": 8,
+        "calls": 16,
+        "phi_nodes": 4,
+        "vector_ops": 112,
+        "shufflevector": 16,
+        "lines": 305,
+        "bytes": 14243
+      },
+      "full_ir": {
+        "total_lines": 10136,
+        "total_bytes": 691358,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 93080
+    },
+    "worst-case": {
+      "kernel": {
+        "basic_blocks": 7,
+        "instructions": 289,
+        "loads": 51,
+        "stores": 18,
+        "alloca": 0,
+        "getelementptr": 67,
+        "fadd": 16,
+        "fmul": 16,
+        "add": 7,
+        "mul": 0,
+        "branches": 8,
+        "calls": 16,
+        "phi_nodes": 4,
+        "vector_ops": 112,
+        "shufflevector": 16,
+        "lines": 305,
+        "bytes": 14243
+      },
+      "full_ir": {
+        "total_lines": 10136,
+        "total_bytes": 691121,
+        "num_functions": 91,
+        "num_globals": 27
+      },
+      "obj_size": 93080
+    }
+  }
+}

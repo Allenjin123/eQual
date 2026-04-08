@@ -1,0 +1,502 @@
+{
+  "add_2d_kernel": {
+    "n_orderings": 51,
+    "actual_best": {
+      "name": "rand_046",
+      "pcycles": 3306745
+    },
+    "actual_worst": {
+      "name": "rand_008",
+      "pcycles": 3392206
+    },
+    "default": {
+      "pcycles": 3389614,
+      "vs_best_pct": 2.5060595842739612,
+      "rank": 10
+    },
+    "pooled_pairwise": {
+      "pick": "rand_046",
+      "pcycles": 3306745,
+      "vs_best_pct": 0.0,
+      "rank": 1
+    },
+    "feature_weighted": {
+      "pick": "rand_046",
+      "pcycles": 3306745,
+      "vs_best_pct": 0.0,
+      "rank": 1
+    },
+    "majority_vote": {
+      "pick": "rand_027",
+      "pcycles": 3389695,
+      "vs_best_pct": 2.508509123019767,
+      "rank": 21
+    },
+    "pooled_sa": {
+      "pick": "rand_025",
+      "pcycles": 3389701,
+      "vs_best_pct": 2.5086905703342715,
+      "rank": 34,
+      "sa_cost": -3.1530092194967203
+    },
+    "per_kernel_oracle": {
+      "pick": "rand_011",
+      "pcycles": 3306766,
+      "vs_best_pct": 0.000635065600764498,
+      "rank": 4
+    },
+    "pooled_kendall_tau": -0.008794584203682352,
+    "pooled_kendall_p": 0.9285933966340795,
+    "name_transfer": {
+      "pick": "rand_003",
+      "pcycles": 3389689,
+      "vs_best_pct": 2.508327675705263,
+      "rank": 16
+    }
+  },
+  "add_large_kernel": {
+    "n_orderings": 51,
+    "actual_best": {
+      "name": "rand_019",
+      "pcycles": 3287008
+    },
+    "actual_worst": {
+      "name": "rand_012",
+      "pcycles": 3392344
+    },
+    "default": {
+      "pcycles": 3392137,
+      "vs_best_pct": 3.1983189575443687,
+      "rank": 49
+    },
+    "pooled_pairwise": {
+      "pick": "rand_038",
+      "pcycles": 3391507,
+      "vs_best_pct": 3.1791525910493674,
+      "rank": 45
+    },
+    "feature_weighted": {
+      "pick": "rand_038",
+      "pcycles": 3391507,
+      "vs_best_pct": 3.1791525910493674,
+      "rank": 45
+    },
+    "majority_vote": {
+      "pick": "rand_038",
+      "pcycles": 3391507,
+      "vs_best_pct": 3.1791525910493674,
+      "rank": 45
+    },
+    "pooled_sa": {
+      "pick": "rand_011",
+      "pcycles": 3390655,
+      "vs_best_pct": 3.1532323620751757,
+      "rank": 18,
+      "sa_cost": -2.984136031330216
+    },
+    "per_kernel_oracle": {
+      "pick": "rand_043",
+      "pcycles": 3307732,
+      "vs_best_pct": 0.6304821892736494,
+      "rank": 5
+    },
+    "pooled_kendall_tau": -0.04775686784436649,
+    "pooled_kendall_p": 0.6253945926993248,
+    "name_transfer": {
+      "pick": "rand_002",
+      "pcycles": 3391504,
+      "vs_best_pct": 3.1790613226374864,
+      "rank": 44
+    }
+  },
+  "add_mul_kernel": {
+    "n_orderings": 51,
+    "actual_best": {
+      "name": "rand_027",
+      "pcycles": 3286615
+    },
+    "actual_worst": {
+      "name": "rand_004",
+      "pcycles": 3393664
+    },
+    "default": {
+      "pcycles": 3390526,
+      "vs_best_pct": 3.1616419933579074,
+      "rank": 40
+    },
+    "pooled_pairwise": {
+      "pick": "rand_046",
+      "pcycles": 3391111,
+      "vs_best_pct": 3.17944146180797,
+      "rank": 43
+    },
+    "feature_weighted": {
+      "pick": "rand_046",
+      "pcycles": 3391111,
+      "vs_best_pct": 3.17944146180797,
+      "rank": 43
+    },
+    "majority_vote": {
+      "pick": "rand_038",
+      "pcycles": 3391117,
+      "vs_best_pct": 3.179624020458739,
+      "rank": 44
+    },
+    "pooled_sa": {
+      "pick": "rand_023",
+      "pcycles": 3390277,
+      "vs_best_pct": 3.154065809350958,
+      "rank": 19,
+      "sa_cost": -3.589051125507922
+    },
+    "per_kernel_oracle": {
+      "pick": "rand_039",
+      "pcycles": 3286636,
+      "vs_best_pct": 0.0006389552776945276,
+      "rank": 4
+    },
+    "pooled_kendall_tau": -0.04308571590681121,
+    "pooled_kendall_p": 0.6601557023780638,
+    "name_transfer": {
+      "pick": "rand_003",
+      "pcycles": 3286642,
+      "vs_best_pct": 0.0008215139284643927,
+      "rank": 5
+    }
+  },
+  "add_relu_kernel": {
+    "n_orderings": 51,
+    "actual_best": {
+      "name": "rand_004",
+      "pcycles": 3286819
+    },
+    "actual_worst": {
+      "name": "rand_013",
+      "pcycles": 3395500
+    },
+    "default": {
+      "pcycles": 3390286,
+      "vs_best_pct": 3.147937260920057,
+      "rank": 14
+    },
+    "pooled_pairwise": {
+      "pick": "rand_025",
+      "pcycles": 3390481,
+      "vs_best_pct": 3.1538700488222804,
+      "rank": 36
+    },
+    "feature_weighted": {
+      "pick": "rand_025",
+      "pcycles": 3390481,
+      "vs_best_pct": 3.1538700488222804,
+      "rank": 36
+    },
+    "majority_vote": {
+      "pick": "rand_038",
+      "pcycles": 3286837,
+      "vs_best_pct": 0.0005476419602052927,
+      "rank": 2
+    },
+    "pooled_sa": {
+      "pick": "rand_023",
+      "pcycles": 3391291,
+      "vs_best_pct": 3.178513937031519,
+      "rank": 41,
+      "sa_cost": -2.980932757208262
+    },
+    "per_kernel_oracle": {
+      "pick": "rand_028",
+      "pcycles": 3390478,
+      "vs_best_pct": 3.1537787751622464,
+      "rank": 33
+    },
+    "pooled_kendall_tau": -0.018284658474339036,
+    "pooled_kendall_p": 0.851514951312639,
+    "name_transfer": {
+      "pick": "rand_003",
+      "pcycles": 3390448,
+      "vs_best_pct": 3.1528660385619043,
+      "rank": 16
+    }
+  },
+  "add_small_kernel": {
+    "n_orderings": 51,
+    "actual_best": {
+      "name": "rand_041",
+      "pcycles": 3286984
+    },
+    "actual_worst": {
+      "name": "rand_023",
+      "pcycles": 3391510
+    },
+    "default": {
+      "pcycles": 3390481,
+      "vs_best_pct": 3.148691931570096,
+      "rank": 17
+    },
+    "pooled_pairwise": {
+      "pick": "rand_038",
+      "pcycles": 3287023,
+      "vs_best_pct": 0.0011864980176356198,
+      "rank": 3
+    },
+    "feature_weighted": {
+      "pick": "rand_038",
+      "pcycles": 3287023,
+      "vs_best_pct": 0.0011864980176356198,
+      "rank": 3
+    },
+    "majority_vote": {
+      "pick": "rand_038",
+      "pcycles": 3287023,
+      "vs_best_pct": 0.0011864980176356198,
+      "rank": 3
+    },
+    "pooled_sa": {
+      "pick": "rand_006",
+      "pcycles": 3390661,
+      "vs_best_pct": 3.154168076266876,
+      "rank": 23,
+      "sa_cost": -2.551448753409928
+    },
+    "per_kernel_oracle": {
+      "pick": "rand_028",
+      "pcycles": 3307741,
+      "vs_best_pct": 0.6314907526169887,
+      "rank": 9
+    },
+    "pooled_kendall_tau": 0.16383296286674162,
+    "pooled_kendall_p": 0.09371699113214574,
+    "name_transfer": {
+      "pick": "rand_003",
+      "pcycles": 3307729,
+      "vs_best_pct": 0.6311256763038701,
+      "rank": 5
+    }
+  },
+  "hexkl_attention": {
+    "n_orderings": 51,
+    "actual_best": {
+      "name": "rand_017",
+      "pcycles": 3287851
+    },
+    "actual_worst": {
+      "name": "rand_028",
+      "pcycles": 3394846
+    },
+    "default": {
+      "pcycles": 3390892,
+      "vs_best_pct": 3.1339923859079986,
+      "rank": 13
+    },
+    "pooled_pairwise": {
+      "pick": "rand_046",
+      "pcycles": 3391522,
+      "vs_best_pct": 3.153153838175757,
+      "rank": 40
+    },
+    "feature_weighted": {
+      "pick": "rand_046",
+      "pcycles": 3391522,
+      "vs_best_pct": 3.153153838175757,
+      "rank": 40
+    },
+    "majority_vote": {
+      "pick": "rand_046",
+      "pcycles": 3391522,
+      "vs_best_pct": 3.153153838175757,
+      "rank": 40
+    },
+    "pooled_sa": {
+      "pick": "rand_046",
+      "pcycles": 3391522,
+      "vs_best_pct": 3.153153838175757,
+      "rank": 40,
+      "sa_cost": -3.2961384770793676
+    },
+    "per_kernel_oracle": {
+      "pick": "rand_011",
+      "pcycles": 3288685,
+      "vs_best_pct": 0.02536611300207947,
+      "rank": 3
+    },
+    "pooled_kendall_tau": -0.009598003822785703,
+    "pooled_kendall_p": 0.9221500027601812,
+    "name_transfer": {
+      "pick": "rand_003",
+      "pcycles": 3392350,
+      "vs_best_pct": 3.1783374611562385,
+      "rank": 47
+    }
+  },
+  "max_2d_kernel": {
+    "n_orderings": 51,
+    "actual_best": {
+      "name": "rand_040",
+      "pcycles": 3286039
+    },
+    "actual_worst": {
+      "name": "rand_006",
+      "pcycles": 3392209
+    },
+    "default": {
+      "pcycles": 3307525,
+      "vs_best_pct": 0.6538571209897387,
+      "rank": 12
+    },
+    "pooled_pairwise": {
+      "pick": "rand_046",
+      "pcycles": 3389701,
+      "vs_best_pct": 3.1546186761630035,
+      "rank": 43
+    },
+    "feature_weighted": {
+      "pick": "rand_046",
+      "pcycles": 3389701,
+      "vs_best_pct": 3.1546186761630035,
+      "rank": 43
+    },
+    "majority_vote": {
+      "pick": "rand_038",
+      "pcycles": 3389695,
+      "vs_best_pct": 3.154436085512071,
+      "rank": 36
+    },
+    "pooled_sa": {
+      "pick": "rand_038",
+      "pcycles": 3389695,
+      "vs_best_pct": 3.154436085512071,
+      "rank": 36,
+      "sa_cost": -2.912994252706389
+    },
+    "per_kernel_oracle": {
+      "pick": "rand_040",
+      "pcycles": 3286039,
+      "vs_best_pct": 0.0,
+      "rank": 1
+    },
+    "pooled_kendall_tau": -0.08672329142545887,
+    "pooled_kendall_p": 0.3751631872370629,
+    "name_transfer": {
+      "pick": "rand_003",
+      "pcycles": 3306781,
+      "vs_best_pct": 0.6312158802740929,
+      "rank": 11
+    }
+  },
+  "mul_2d_kernel": {
+    "n_orderings": 51,
+    "actual_best": {
+      "name": "rand_043",
+      "pcycles": 3286033
+    },
+    "actual_worst": {
+      "name": "rand_031",
+      "pcycles": 3392203
+    },
+    "default": {
+      "pcycles": 3389608,
+      "vs_best_pct": 3.151976866939559,
+      "rank": 12
+    },
+    "pooled_pairwise": {
+      "pick": "rand_046",
+      "pcycles": 3389674,
+      "vs_best_pct": 3.1539853677671528,
+      "rank": 18
+    },
+    "feature_weighted": {
+      "pick": "rand_046",
+      "pcycles": 3389674,
+      "vs_best_pct": 3.1539853677671528,
+      "rank": 18
+    },
+    "majority_vote": {
+      "pick": "rand_038",
+      "pcycles": 3389686,
+      "vs_best_pct": 3.154350549735806,
+      "rank": 21
+    },
+    "pooled_sa": {
+      "pick": "rand_011",
+      "pcycles": 3389692,
+      "vs_best_pct": 3.1545331407201322,
+      "rank": 28,
+      "sa_cost": -2.526529246865376
+    },
+    "per_kernel_oracle": {
+      "pick": "rand_043",
+      "pcycles": 3286033,
+      "vs_best_pct": 0.0,
+      "rank": 1
+    },
+    "pooled_kendall_tau": 0.10767060114638398,
+    "pooled_kendall_p": 0.2716980664982821,
+    "name_transfer": {
+      "pick": "rand_003",
+      "pcycles": 3306766,
+      "vs_best_pct": 0.6309431463408919,
+      "rank": 5
+    }
+  },
+  "sub_2d_kernel": {
+    "n_orderings": 51,
+    "actual_best": {
+      "name": "rand_030",
+      "pcycles": 3286021
+    },
+    "actual_worst": {
+      "name": "rand_017",
+      "pcycles": 3391399
+    },
+    "default": {
+      "pcycles": 3306676,
+      "vs_best_pct": 0.6285717589753687,
+      "rank": 2
+    },
+    "pooled_pairwise": {
+      "pick": "rand_046",
+      "pcycles": 3389689,
+      "vs_best_pct": 3.154818548025104,
+      "rank": 26
+    },
+    "feature_weighted": {
+      "pick": "rand_046",
+      "pcycles": 3389689,
+      "vs_best_pct": 3.154818548025104,
+      "rank": 26
+    },
+    "majority_vote": {
+      "pick": "rand_038",
+      "pcycles": 3306745,
+      "vs_best_pct": 0.6306715629632312,
+      "rank": 5
+    },
+    "pooled_sa": {
+      "pick": "rand_038",
+      "pcycles": 3306745,
+      "vs_best_pct": 0.6306715629632312,
+      "rank": 5,
+      "sa_cost": -2.825077496465586
+    },
+    "per_kernel_oracle": {
+      "pick": "rand_012",
+      "pcycles": 3307603,
+      "vs_best_pct": 0.6567821690731739,
+      "rank": 17
+    },
+    "pooled_kendall_tau": 0.05535975754196573,
+    "pooled_kendall_p": 0.5693397134701526,
+    "name_transfer": {
+      "pick": "rand_003",
+      "pcycles": 3306760,
+      "vs_best_pct": 0.6311280420910275,
+      "rank": 8
+    }
+  },
+  "_diagnostics": {
+    "n_unanimous_pairs": 0,
+    "n_conflicting_pairs": 94,
+    "best_ordering_by_mean_rank": "rand_003"
+  }
+}

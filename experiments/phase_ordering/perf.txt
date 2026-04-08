@@ -1,0 +1,6 @@
+Test_Info: {
+	Name:hexkl_attention
+	Result:Pass
+	Perf:563651.000000
+	Units:microseconds
+}

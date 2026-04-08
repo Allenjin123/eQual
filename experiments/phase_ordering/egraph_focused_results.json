@@ -1,0 +1,65 @@
+{
+  "total_passes": 8,
+  "commutative_pairs": 22,
+  "equivalent_orderings": 1680,
+  "saturated": true,
+  "saturation_time_s": 0.008,
+  "rewrites_applied": 1679,
+  "position_variance": [
+    5,
+    6,
+    7,
+    8,
+    8,
+    7,
+    6,
+    5
+  ],
+  "cost_model_results": {
+    "VTCM-first": {
+      "default_cost": 6.5,
+      "optimal_cost": 2.0,
+      "improvement_pct": 69.23076923076923,
+      "optimal_ordering": [
+        "VTCMTiling",
+        "HexagonFusion",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "LICM",
+        "HexagonSlicing",
+        "FormVirtualThreads",
+        "SmallExponentToMultiply"
+      ]
+    },
+    "Fusion-first": {
+      "default_cost": 1.0,
+      "optimal_cost": 0.5,
+      "improvement_pct": 50.0,
+      "optimal_ordering": [
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "FormVirtualThreads",
+        "SmallExponentToMultiply",
+        "HexagonSlicing",
+        "LICM"
+      ]
+    },
+    "Balanced": {
+      "default_cost": 11.0,
+      "optimal_cost": 5.0,
+      "improvement_pct": 54.54545454545454,
+      "optimal_ordering": [
+        "HexagonFusion",
+        "VTCMTiling",
+        "HexagonTiling",
+        "HoistScalarOps",
+        "FormVirtualThreads",
+        "SmallExponentToMultiply",
+        "HexagonSlicing",
+        "LICM"
+      ]
+    }
+  }
+}

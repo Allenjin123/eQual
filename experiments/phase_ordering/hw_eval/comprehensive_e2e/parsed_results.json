@@ -1,0 +1,110 @@
+{
+  "add_2d_kernel": {
+    "num_orderings": 5,
+    "best": {
+      "ordering": "vtcm_first",
+      "pcycles": 526401358
+    },
+    "worst": {
+      "ordering": "default",
+      "pcycles": 531578410
+    },
+    "speedup": 1.0098347998562724,
+    "all": [
+      {
+        "kernel": "add_2d_kernel",
+        "ordering": "vtcm_first",
+        "pcycles": 526401358,
+        "insns": 385226599
+      },
+      {
+        "kernel": "add_2d_kernel",
+        "ordering": "worst_case",
+        "pcycles": 526475641,
+        "insns": 385276136
+      },
+      {
+        "kernel": "add_2d_kernel",
+        "ordering": "slicing_first",
+        "pcycles": 531496075,
+        "insns": 390494608
+      },
+      {
+        "kernel": "add_2d_kernel",
+        "ordering": "fusion_first",
+        "pcycles": 531543988,
+        "insns": 390526080
+      },
+      {
+        "kernel": "add_2d_kernel",
+        "ordering": "default",
+        "pcycles": 531578410,
+        "insns": 390549129
+      }
+    ]
+  },
+  "hexkl_linalg_matmul": {
+    "num_orderings": 5,
+    "best": {
+      "ordering": "default",
+      "pcycles": 2434863397
+    },
+    "worst": {
+      "ordering": "fusion_first",
+      "pcycles": 2434908304
+    },
+    "speedup": 1.0000184433344619,
+    "all": [
+      {
+        "kernel": "hexkl_linalg_matmul",
+        "ordering": "default",
+        "pcycles": 2434863397,
+        "insns": 1247009009
+      },
+      {
+        "kernel": "hexkl_linalg_matmul",
+        "ordering": "vtcm_first",
+        "pcycles": 2434873039,
+        "insns": 1247013006
+      },
+      {
+        "kernel": "hexkl_linalg_matmul",
+        "ordering": "worst_case",
+        "pcycles": 2434887049,
+        "insns": 1247026432
+      },
+      {
+        "kernel": "hexkl_linalg_matmul",
+        "ordering": "slicing_first",
+        "pcycles": 2434900453,
+        "insns": 1247039005
+      },
+      {
+        "kernel": "hexkl_linalg_matmul",
+        "ordering": "fusion_first",
+        "pcycles": 2434908304,
+        "insns": 1247043124
+      }
+    ]
+  },
+  "conv_tiling": {
+    "num_orderings": 1,
+    "best": {
+      "ordering": "default",
+      "pcycles": 52124519488
+    },
+    "worst": {
+      "ordering": "default",
+      "pcycles": 52124519488
+    },
+    "speedup": 1.0,
+    "all": [
+      {
+        "kernel": "conv_tiling",
+        "ordering": "default",
+        "pcycles": 52124519488,
+        "insns": 26484605119
+      }
+    ]
+  }
+}

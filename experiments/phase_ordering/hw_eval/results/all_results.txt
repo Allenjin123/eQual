@@ -1,0 +1,15 @@
+RESULT: bench=fusion variant=unfused cycles=1376334 n=262144
+RESULT: bench=fusion variant=fused cycles=1474641 n=262144
+RESULT: bench=interaction variant=none cycles=1037250 n=262144
+RESULT: bench=interaction variant=fusion_only cycles=987705 n=262144
+RESULT: bench=interaction variant=tiling_only cycles=960792 n=262144
+RESULT: bench=interaction variant=fusion_and_tiling cycles=960702 n=262144
+RESULT: bench=loop_order variant=ijk cycles=60361785 n=256
+RESULT: bench=loop_order variant=ikj cycles=75918441 n=256
+RESULT: bench=loop_order variant=blocked cycles=65431938 n=256
+RESULT: bench=scalar_hoist variant=non_hoisted cycles=3366978 n=65536
+RESULT: bench=scalar_hoist variant=hoisted cycles=209007 n=65536
+RESULT: bench=tiling variant=untiled cycles=1035318 n=262144
+RESULT: bench=tiling variant=tiled cycles=965019 n=262144
+RESULT: bench=fusion variant=O1_unfused cycles=4718661 n=262144
+RESULT: bench=fusion variant=O1_fused cycles=3145785 n=262144

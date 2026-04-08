@@ -1,0 +1,20 @@
+hexagon-sim INFO: The rev_id used in the simulation is 0x00008c73 (v73na_1)
+RESULT: bench=sweep variant=unfused_1k cycles=18504 n=1024
+RESULT: bench=sweep variant=fused_1k cycles=12348 n=1024
+RESULT: bench=sweep variant=unfused_16k cycles=294984 n=16384
+RESULT: bench=sweep variant=fused_16k cycles=196668 n=16384
+RESULT: bench=sweep variant=unfused_64k cycles=1179720 n=65536
+RESULT: bench=sweep variant=fused_64k cycles=786492 n=65536
+RESULT: bench=sweep variant=unfused_256k cycles=4718664 n=262144
+RESULT: bench=sweep variant=fused_256k cycles=3145788 n=262144
+RESULT: bench=sweep variant=unfused_1024k cycles=18874440 n=1048576
+RESULT: bench=sweep variant=fused_1024k cycles=12582972 n=1048576
+
+Done!
+	T0: Insns=385074273 Packets=192133342
+	T1: Insns=0 Packets=0
+	T2: Insns=0 Packets=0
+	T3: Insns=0 Packets=0
+	T4: Insns=0 Packets=0
+	T5: Insns=0 Packets=0
+	Total: Insns=385074273 Pcycles=576400065

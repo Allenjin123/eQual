@@ -1,0 +1,1264 @@
+{
+  "hexagon_stats": [
+    {
+      "iteration": 2,
+      "time_s": 0.003405,
+      "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 8.37\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 36.8\u00b5s, \"(rewrite "
+    },
+    {
+      "iteration": 4,
+      "time_s": 0.005488,
+      "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 21.151\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 15.89\u00b5"
+    },
+    {
+      "iteration": 6,
+      "time_s": 0.011552,
+      "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 47.2\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 52.851\u00b5s, \"(rewrit"
+    },
+    {
+      "iteration": 8,
+      "time_s": 0.02072,
+      "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 99.49\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 118.851"
+    },
+    {
+      "iteration": 10,
+      "time_s": 0.030723,
+      "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 127.59\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 118.25"
+    },
+    {
+      "iteration": 12,
+      "time_s": 0.036801,
+      "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 179.912\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 169.0"
+    },
+    {
+      "iteration": 14,
+      "time_s": 0.037765,
+      "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 219\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 269.272\u00b5s, \"(rewrit"
+    },
+    {
+      "iteration": 16,
+      "time_s": 0.037007,
+      "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 223.622\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 285.552\u00b5s, \"(re"
+    },
+    {
+      "iteration": 18,
+      "time_s": 0.012381,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 3.161\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 3.08\u00b5s"
+    },
+    {
+      "iteration": 20,
+      "time_s": 0.001723,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"("
+    },
+    {
+      "iteration": 22,
+      "time_s": 0.001551,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 120ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 24,
+      "time_s": 0.001439,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 26,
+      "time_s": 0.001383,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 28,
+      "time_s": 0.001377,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 100ns, \"("
+    },
+    {
+      "iteration": 30,
+      "time_s": 0.001725,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 32,
+      "time_s": 0.001366,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 34,
+      "time_s": 0.001338,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 80ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 36,
+      "time_s": 0.001379,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 110ns, \"("
+    },
+    {
+      "iteration": 38,
+      "time_s": 0.001393,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 40,
+      "time_s": 0.001364,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 100ns, \"(rewrite ("
+    },
+    {
+      "iteration": 42,
+      "time_s": 0.001385,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 44,
+      "time_s": 0.001362,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 100ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 46,
+      "time_s": 0.001381,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 100ns, \"("
+    },
+    {
+      "iteration": 48,
+      "time_s": 0.001389,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 50,
+      "time_s": 0.001366,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 100ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 52,
+      "time_s": 0.001379,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 120ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 54,
+      "time_s": 0.001343,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 80ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 56,
+      "time_s": 0.001362,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 58,
+      "time_s": 0.001386,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 60,
+      "time_s": 0.001338,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"(r"
+    },
+    {
+      "iteration": 62,
+      "time_s": 0.001394,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 120ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 64,
+      "time_s": 0.001913,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"(r"
+    },
+    {
+      "iteration": 66,
+      "time_s": 0.001407,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 68,
+      "time_s": 0.00138,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 100ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 70,
+      "time_s": 0.001384,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"("
+    },
+    {
+      "iteration": 72,
+      "time_s": 0.001382,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 74,
+      "time_s": 0.001357,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"(r"
+    },
+    {
+      "iteration": 76,
+      "time_s": 0.001375,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 140ns, \"(rewrite (P"
+    },
+    {
+      "iteration": 78,
+      "time_s": 0.001338,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"(r"
+    },
+    {
+      "iteration": 80,
+      "time_s": 0.001394,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 100ns, \"("
+    },
+    {
+      "iteration": 82,
+      "time_s": 0.00138,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"(r"
+    },
+    {
+      "iteration": 84,
+      "time_s": 0.001358,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 120ns, \"("
+    },
+    {
+      "iteration": 86,
+      "time_s": 0.001368,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 88,
+      "time_s": 0.001331,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'MatmulToHexKL') (PassSeq_cons (PassNode_mk 'ConvTiling') _rest)) (PassSeq_cons (PassNode_mk 'ConvTiling') (PassSeq_cons (PassNode_mk 'MatmulToHexKL') _rest)))\": 90ns, \"(rewrite (Pa"
+    },
+    {
+      "iteration": 90,
+      "time_s": 0.001316,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"(r"
+    },
+    {
+      "iteration": 92,
+      "time_s": 0.001337,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 80ns, \"(r"
+    },
+    {
+      "iteration": 94,
+      "time_s": 0.001339,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"(r"
+    },
+    {
+      "iteration": 96,
+      "time_s": 0.001389,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 110ns, \"("
+    },
+    {
+      "iteration": 98,
+      "time_s": 0.001394,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 130ns, \"("
+    },
+    {
+      "iteration": 100,
+      "time_s": 0.001358,
+      "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'FormVirtualThreads') (PassSeq_cons (PassNode_mk 'SmallExpToMul') _rest)) (PassSeq_cons (PassNode_mk 'SmallExpToMul') (PassSeq_cons (PassNode_mk 'FormVirtualThreads') _rest)))\": 110ns, \"(rewrite (PassSeq_cons (PassNode_mk 'HexagonSlicing') (PassSeq_cons (PassNode_mk 'HoistScalarOps') _rest)) (PassSeq_cons (PassNode_mk 'HoistScalarOps') (PassSeq_cons (PassNode_mk 'HexagonSlicing') _rest)))\": 90ns, \"("
+    }
+  ],
+  "by_size": {
+    "8": [
+      {
+        "iteration": 2,
+        "time_s": 0.001587,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 7.35\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 33.481\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassS"
+      },
+      {
+        "iteration": 4,
+        "time_s": 0.001528,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 7.91\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 16.551\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassS"
+      },
+      {
+        "iteration": 6,
+        "time_s": 0.002332,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 14.97\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 17.22\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassS"
+      },
+      {
+        "iteration": 8,
+        "time_s": 0.001468,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 27.211\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 18.53\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (Pass"
+      },
+      {
+        "iteration": 10,
+        "time_s": 0.000379,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 12,
+        "time_s": 0.000364,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 14,
+        "time_s": 0.000384,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 16,
+        "time_s": 0.000367,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 18,
+        "time_s": 0.000371,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 20,
+        "time_s": 0.000361,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 160ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 22,
+        "time_s": 0.000377,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 110ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 24,
+        "time_s": 0.000338,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 26,
+        "time_s": 0.000372,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 28,
+        "time_s": 0.000374,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 30,
+        "time_s": 0.000376,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 140ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 32,
+        "time_s": 0.000339,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 34,
+        "time_s": 0.000373,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 36,
+        "time_s": 0.000349,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 38,
+        "time_s": 0.000354,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 40,
+        "time_s": 0.000362,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 42,
+        "time_s": 0.000348,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 44,
+        "time_s": 0.000348,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 46,
+        "time_s": 0.000366,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 48,
+        "time_s": 0.000351,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 50,
+        "time_s": 0.000364,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 52,
+        "time_s": 0.000355,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 54,
+        "time_s": 0.000345,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 56,
+        "time_s": 0.000381,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 58,
+        "time_s": 0.000333,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 60,
+        "time_s": 0.000374,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 62,
+        "time_s": 0.000371,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 64,
+        "time_s": 0.000375,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 66,
+        "time_s": 0.000369,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 68,
+        "time_s": 0.000377,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 70,
+        "time_s": 0.000441,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 72,
+        "time_s": 0.000383,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 74,
+        "time_s": 0.000357,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 76,
+        "time_s": 0.00037,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 78,
+        "time_s": 0.00036,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 80,
+        "time_s": 0.000376,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 82,
+        "time_s": 0.00036,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 84,
+        "time_s": 0.000374,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 86,
+        "time_s": 0.000358,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 88,
+        "time_s": 0.000384,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 90,
+        "time_s": 0.000353,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 92,
+        "time_s": 0.000375,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 94,
+        "time_s": 0.00037,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 110ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 96,
+        "time_s": 0.000379,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 98,
+        "time_s": 0.000364,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 100,
+        "time_s": 0.000369,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P03') _rest)) (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P02') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P06') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_co"
+      }
+    ],
+    "12": [
+      {
+        "iteration": 2,
+        "time_s": 0.002074,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 4.42\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 27.99\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSe"
+      },
+      {
+        "iteration": 4,
+        "time_s": 0.003351,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 12.39\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 29.74\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassS"
+      },
+      {
+        "iteration": 6,
+        "time_s": 0.00541,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 35.371\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 45.98\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (Pass"
+      },
+      {
+        "iteration": 8,
+        "time_s": 0.005531,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 31\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 63.01\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_"
+      },
+      {
+        "iteration": 10,
+        "time_s": 0.009226,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 38.27\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 40.02\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassS"
+      },
+      {
+        "iteration": 12,
+        "time_s": 0.006035,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 34.161\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 41.59\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (Pass"
+      },
+      {
+        "iteration": 14,
+        "time_s": 0.001104,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 110ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 16,
+        "time_s": 0.000758,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 18,
+        "time_s": 0.000673,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 20,
+        "time_s": 0.000646,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 22,
+        "time_s": 0.000627,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 24,
+        "time_s": 0.000616,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 26,
+        "time_s": 0.000658,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 28,
+        "time_s": 0.001349,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 30,
+        "time_s": 0.000701,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 140ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_"
+      },
+      {
+        "iteration": 32,
+        "time_s": 0.000812,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 34,
+        "time_s": 0.000642,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 36,
+        "time_s": 0.000614,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 38,
+        "time_s": 0.000624,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 40,
+        "time_s": 0.000616,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 42,
+        "time_s": 0.000614,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 120ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 44,
+        "time_s": 0.000614,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 46,
+        "time_s": 0.000631,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 120ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 48,
+        "time_s": 0.000635,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 50,
+        "time_s": 0.000644,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 120ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 52,
+        "time_s": 0.000638,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 54,
+        "time_s": 0.000599,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 56,
+        "time_s": 0.000611,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 58,
+        "time_s": 0.000612,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 60,
+        "time_s": 0.000613,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 62,
+        "time_s": 0.000621,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 64,
+        "time_s": 0.000612,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 66,
+        "time_s": 0.000617,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 68,
+        "time_s": 0.000637,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 70,
+        "time_s": 0.000611,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 72,
+        "time_s": 0.000602,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 74,
+        "time_s": 0.000607,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 76,
+        "time_s": 0.000616,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 78,
+        "time_s": 0.000614,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 80,
+        "time_s": 0.000613,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 82,
+        "time_s": 0.000644,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 84,
+        "time_s": 0.00064,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 110ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_"
+      },
+      {
+        "iteration": 86,
+        "time_s": 0.000605,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 88,
+        "time_s": 0.000603,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 90,
+        "time_s": 0.000607,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 92,
+        "time_s": 0.000633,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 120ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 94,
+        "time_s": 0.000629,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 96,
+        "time_s": 0.000619,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 120ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 98,
+        "time_s": 0.000604,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 100,
+        "time_s": 0.000625,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 120ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_c"
+      }
+    ],
+    "16": [
+      {
+        "iteration": 2,
+        "time_s": 0.003034,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 5.59\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 4.66\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq"
+      },
+      {
+        "iteration": 4,
+        "time_s": 0.005411,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 15.25\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 14.58\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassS"
+      },
+      {
+        "iteration": 6,
+        "time_s": 0.009229,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 31.421\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 31.07\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (Pass"
+      },
+      {
+        "iteration": 8,
+        "time_s": 0.009371,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 43.14\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 39.241\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (Pass"
+      },
+      {
+        "iteration": 10,
+        "time_s": 0.008516,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 48.581\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 5.071\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (Pass"
+      },
+      {
+        "iteration": 12,
+        "time_s": 0.007681,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 69.691\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 3.94\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassS"
+      },
+      {
+        "iteration": 14,
+        "time_s": 0.003016,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 2.07\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 22.36\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassS"
+      },
+      {
+        "iteration": 16,
+        "time_s": 0.000993,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 110ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 18,
+        "time_s": 0.000973,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 20,
+        "time_s": 0.00096,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 22,
+        "time_s": 0.000936,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 24,
+        "time_s": 0.000947,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_"
+      },
+      {
+        "iteration": 26,
+        "time_s": 0.000947,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 28,
+        "time_s": 0.000915,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 30,
+        "time_s": 0.000952,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 32,
+        "time_s": 0.000943,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 34,
+        "time_s": 0.000951,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 36,
+        "time_s": 0.001683,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 38,
+        "time_s": 0.000942,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 40,
+        "time_s": 0.000959,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 42,
+        "time_s": 0.000957,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 44,
+        "time_s": 0.000945,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 46,
+        "time_s": 0.000959,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 48,
+        "time_s": 0.000947,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 50,
+        "time_s": 0.000937,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 52,
+        "time_s": 0.000961,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 54,
+        "time_s": 0.000941,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 56,
+        "time_s": 0.000947,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 58,
+        "time_s": 0.000938,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 60,
+        "time_s": 0.000949,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 62,
+        "time_s": 0.000941,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 64,
+        "time_s": 0.000944,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 66,
+        "time_s": 0.000964,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 68,
+        "time_s": 0.000953,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 70,
+        "time_s": 0.000948,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 72,
+        "time_s": 0.000944,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 74,
+        "time_s": 0.000937,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 76,
+        "time_s": 0.000952,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 78,
+        "time_s": 0.000913,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 80,
+        "time_s": 0.000943,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 82,
+        "time_s": 0.000946,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 84,
+        "time_s": 0.000976,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 86,
+        "time_s": 0.00095,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 88,
+        "time_s": 0.000941,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 90,
+        "time_s": 0.000945,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 120ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_"
+      },
+      {
+        "iteration": 92,
+        "time_s": 0.000945,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 94,
+        "time_s": 0.000964,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 96,
+        "time_s": 0.000934,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 98,
+        "time_s": 0.000942,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 100,
+        "time_s": 0.000945,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P07') _rest)) (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P00') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      }
+    ],
+    "20": [
+      {
+        "iteration": 2,
+        "time_s": 0.004039,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 4.67\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 4.69\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq"
+      },
+      {
+        "iteration": 4,
+        "time_s": 0.009019,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 22.52\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 23.471\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (Pass"
+      },
+      {
+        "iteration": 6,
+        "time_s": 0.022578,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 60.29\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 60.451\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (Pass"
+      },
+      {
+        "iteration": 8,
+        "time_s": 0.046509,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 152.011\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 172.422\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (P"
+      },
+      {
+        "iteration": 10,
+        "time_s": 0.044443,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 137.6\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 162.151\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (Pas"
+      },
+      {
+        "iteration": 12,
+        "time_s": 0.061272,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 215.212\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 119.021\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (P"
+      },
+      {
+        "iteration": 14,
+        "time_s": 0.050282,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 15.27\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 12.28\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassS"
+      },
+      {
+        "iteration": 16,
+        "time_s": 0.042109,
+        "report": "RunReport { updated: true, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 10.18\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 10.49\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P10') (PassSeq_cons (PassNode_mk 'P12') _rest)) (PassS"
+      },
+      {
+        "iteration": 18,
+        "time_s": 0.022089,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 6.29\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 5.14\u00b5s, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSe"
+      },
+      {
+        "iteration": 20,
+        "time_s": 0.003599,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 160ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 22,
+        "time_s": 0.003166,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 24,
+        "time_s": 0.00291,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 26,
+        "time_s": 0.002699,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 110ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 28,
+        "time_s": 0.002513,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 30,
+        "time_s": 0.002448,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 32,
+        "time_s": 0.002482,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 34,
+        "time_s": 0.002443,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 36,
+        "time_s": 0.00237,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P04') _rest)) (PassSeq_cons (PassNode_mk 'P04') (PassSeq_cons (PassNode_mk 'P03') _rest)))\": 150ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 38,
+        "time_s": 0.002412,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 330ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 40,
+        "time_s": 0.00238,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 42,
+        "time_s": 0.002434,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 44,
+        "time_s": 0.002362,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 46,
+        "time_s": 0.002508,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 48,
+        "time_s": 0.002465,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P03') (PassSeq_cons (PassNode_mk 'P04') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 50,
+        "time_s": 0.002434,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P02') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 52,
+        "time_s": 0.002363,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 54,
+        "time_s": 0.002312,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 56,
+        "time_s": 0.002363,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 58,
+        "time_s": 0.002332,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 70ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 60,
+        "time_s": 0.002398,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 62,
+        "time_s": 0.002486,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 64,
+        "time_s": 0.002436,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 110ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 66,
+        "time_s": 0.002408,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 68,
+        "time_s": 0.002458,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 70,
+        "time_s": 0.002395,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P16') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 72,
+        "time_s": 0.002407,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 74,
+        "time_s": 0.002347,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 140ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 76,
+        "time_s": 0.002386,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 78,
+        "time_s": 0.002369,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 80,
+        "time_s": 0.002367,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 100ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 140ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_"
+      },
+      {
+        "iteration": 82,
+        "time_s": 0.002443,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P09') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 84,
+        "time_s": 0.002419,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 86,
+        "time_s": 0.002429,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 88,
+        "time_s": 0.002405,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 120ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 90,
+        "time_s": 0.002353,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 92,
+        "time_s": 0.002345,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 180ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 94,
+        "time_s": 0.002354,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_co"
+      },
+      {
+        "iteration": 96,
+        "time_s": 0.002398,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 80ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 130ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 98,
+        "time_s": 0.002414,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P13') _rest)) (PassSeq_cons (PassNode_mk 'P13') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P01') (PassSeq_cons (PassNode_mk 'P02') _rest)) (PassSeq_cons (PassNode_mk 'P02') (PassSeq_cons (PassNode_mk 'P01') _rest)))\": 120ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      },
+      {
+        "iteration": 100,
+        "time_s": 0.00237,
+        "report": "RunReport { updated: false, search_and_apply_time_per_rule: {\"(rewrite (PassSeq_cons (PassNode_mk 'P07') (PassSeq_cons (PassNode_mk 'P11') _rest)) (PassSeq_cons (PassNode_mk 'P11') (PassSeq_cons (PassNode_mk 'P07') _rest)))\": 90ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P08') (PassSeq_cons (PassNode_mk 'P09') _rest)) (PassSeq_cons (PassNode_mk 'P09') (PassSeq_cons (PassNode_mk 'P08') _rest)))\": 210ns, \"(rewrite (PassSeq_cons (PassNode_mk 'P00') (PassSeq_cons (PassNode_mk 'P01') _rest)) (PassSeq_c"
+      }
+    ]
+  }
+}

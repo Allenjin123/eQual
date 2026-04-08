@@ -1,0 +1,47 @@
+{
+  "VTCM-first": {
+    "default_cost": 38.0,
+    "ilp_cost": 17.5,
+    "ilp_time": 0.2693,
+    "ilp_reduction": 53.9,
+    "random_cost": 17.5,
+    "random_time": 1.3016,
+    "random_reduction": 53.9,
+    "ga_cost": 17.5,
+    "ga_time": 2.8907,
+    "ga_reduction": 53.9,
+    "sa_cost": 17.5,
+    "sa_time": 0.1838,
+    "sa_reduction": 53.9
+  },
+  "Fusion-first": {
+    "default_cost": 22.0,
+    "ilp_cost": 11.0,
+    "ilp_time": 0.2715,
+    "ilp_reduction": 50.0,
+    "random_cost": 11.0,
+    "random_time": 1.5984,
+    "random_reduction": 50.0,
+    "ga_cost": 14.5,
+    "ga_time": 3.1494,
+    "ga_reduction": 34.1,
+    "sa_cost": 11.0,
+    "sa_time": 0.2035,
+    "sa_reduction": 50.0
+  },
+  "Balanced": {
+    "default_cost": 37.0,
+    "ilp_cost": 18.5,
+    "ilp_time": 0.287,
+    "ilp_reduction": 50.0,
+    "random_cost": 18.5,
+    "random_time": 1.3062,
+    "random_reduction": 50.0,
+    "ga_cost": 18.5,
+    "ga_time": 2.9198,
+    "ga_reduction": 50.0,
+    "sa_cost": 18.5,
+    "sa_time": 0.2065,
+    "sa_reduction": 50.0
+  }
+}
